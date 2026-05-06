@@ -77,12 +77,22 @@ SINOSHOP 并非传统意义上征服自然的工程工具，而是与海洋生�
 ### /DAO_Governance — 去中心化治理体系
 
 ---
-
 ## 📂 文档索引
 
-- **技术白皮书全文 (中文版)** — [/Documentation/Marine_City_Whitepaper_2026_CN.pdf](./Documentation/Marine_City_Whitepaper_2026_CN.pdf)
-- **历史档案** — [docs/archive/README_original_concept.md](docs/archive/README_original_concept.md)
+- **技术白皮书全文 (中文版)** — [海洋城市基础平台架构技术报告 PDF](./Documentation/Marine_City_Whitepaper_2026_CN.pdf)
+- **历史档案** — [SINOSHOP 早期概念与 R16-SDK 协议文档](docs/archive/README_original_concept.md)
 
+### 核心子模块技术文档
+- 🧠 [全悬浮PID神经控制系统](./姿态控制与稳定性算法/README.md)
+- 🏛️ [桥面高度四重稳定矩阵](./_Stabilization_Quadra/README.md)
+- 🧱 [标准化自浮式细胞模块](./Modular_Floating_Unit/README.md)
+- 🌱 [生态工程物理接口](./Ecological_Interface/README.md)
+- ⚡ [多能互补调度系统](./Energy_Complementary/README.md)
+- ♻️ [资源循环集群](./Resource_Recycling/README.md)
+- 🌐 [全域数字孪生](./Digital_Twin/README.md)
+- 📡 [海域边缘计算节点](./Edge_Computing/README.md)
+- 💰 [现实资产数字化与智能合约](./RWA_Financing/README.md)
+- 🗳️ [去中心化治理体系](./DAO_Governance/README.md)
 ---
 
 ## 🌏 多平台部署
