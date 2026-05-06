@@ -10,7 +10,9 @@
 >
 > 贞忠昭日月，惠民播春秋。
 > *Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
-> *"我们不是在建造一座桥，而是在部署一套海洋城市操作系统。"*
+> *"我们不是在建造一座桥，而是在部署一套海洋城市操作系统。"
+
+> 🛠️ **工程师入口：** 如果你关注具体的技术问题（控制、结构、流体、嵌入式），请直接查看 [ENGINEERING.md](./ENGINEERING.md) —— 五个明确的工程问题，等待你的解决方案。*
 
 [![License](https://img.shields.io/badge/License-SINOSHOP%20Open%20Innovation-blue)](./LICENSE)
 [![Whitepaper](https://img.shields.io/badge/Whitepaper-2026.02-00bcd4)](./Documentation/Marine_City_Whitepaper_2026_CN.pdf)
