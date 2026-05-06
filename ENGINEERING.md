@@ -27,7 +27,7 @@ Design a control strategy that maintains pitch deviation ≤ 0.5° for a 尺度 
 - Hardware-in-the-loop test specifications
 
 **Reference Specs:** /姿态控制与稳定性算法/
-**Discussion:** [Issue #1](https://gitee.com/sinoshop/sinoshop-os/issues)
+**Discussion:** [Issue #1](https://gitee.com/sinoshop/sinoshop-os/issues/I1)
 
 ---
 
@@ -51,7 +51,7 @@ Design and validate a modular mechanical connection system (mortise-tenon style)
 - Alternative connection topology proposals
 
 **Reference Specs:** /Modular_Floating_Unit/
-**Discussion:** [Issue #2](https://gitee.com/sinoshop/sinoshop-os/issues)
+**Discussion:** [Issue #2](https://gitee.com/sinoshop/sinoshop-os/issues) *(明日上线)*
 
 ---
 
@@ -75,7 +75,7 @@ Implement a digital twin synchronization protocol that maintains < 1s latency be
 - Digital twin LOD (Level of Detail) specifications
 
 **Reference Specs:** /Digital_Twin/ /Edge_Computing/
-**Discussion:** [Issue #3](https://gitee.com/sinoshop/sinoshop-os/issues)
+**Discussion:** [Issue #3](https://gitee.com/sinoshop/sinoshop-os/issues/I3)
 
 ---
 
@@ -98,7 +98,7 @@ Develop a real-time wave prediction algorithm (3-10s horizon) and integrate it a
 - Benchmark datasets for validation
 
 **Reference Specs:** /姿态控制与稳定性算法/
-**Discussion:** [Issue #4](https://gitee.com/sinoshop/sinoshop-os/issues)
+**Discussion:** [Issue #4](https://gitee.com/sinoshop/sinoshop-os/issues/I4)
 
 ---
 
@@ -121,7 +121,7 @@ Propose a maintenance strategy that reduces the lifecycle maintenance cost of a 
 - Sensor placement optimization for structural health monitoring
 
 **Reference Specs:** /Modular_Floating_Unit/ /Digital_Twin/
-**Discussion:** [Issue #5](https://gitee.com/sinoshop/sinoshop-os/issues)
+**Discussion:** [Issue #5](https://gitee.com/sinoshop/sinoshop-os/issues) *(明日上线)*
 
 ---
 
