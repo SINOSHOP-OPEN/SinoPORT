@@ -1,6 +1,15 @@
 ﻿# 🌊 SINOSHOP-OS: Marine City Intelligence Ecological Matrix
 
-> **海洋空间智能生态母体 — 核心控制中枢与物理基底开源项目**  
+> **海洋空间智能生态母体 — 核心控制中枢与物理基底开源项目**
+> 
+> **SINOSHOP** — Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform
+> **自浮式智能海洋城市运营平台**
+>
+> 观天之道，执天之行，造福人民。
+> *Observe Nature's Order, Align with Ocean's Rhythm, Advance the People's Welfare.*
+>
+> 贞忠昭日月，惠民播春秋。
+> *Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
 > *"我们不是在建造一座桥，而是在部署一套海洋城市操作系统。"*
 
 [![License](https://img.shields.io/badge/License-SINOSHOP%20Open%20Innovation-blue)](./LICENSE)
