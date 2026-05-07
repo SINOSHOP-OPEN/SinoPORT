@@ -153,4 +153,8 @@ Propose a maintenance strategy that reduces the lifecycle maintenance cost of a 
 
 ---
 
-*"Engineers don't need a vision statement. They need a problem worth solving."*
+*"Engineers don't need a vision statement. They need a problem worth solving."
+
+---
+**SINOSHOP-Core 治理委员会**
+苏月明、梁诚超、梁振雄
