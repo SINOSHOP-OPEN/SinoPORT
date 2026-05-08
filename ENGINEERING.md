@@ -98,7 +98,7 @@ Develop a real-time wave prediction algorithm (3-10s horizon) and integrate it a
 - Benchmark datasets for validation
 
 **Reference Specs:** /姿态控制与稳定性算法/
-**Discussion:** [Issue #4](https://gitee.com/sinoshop/sinoshop-os/issues/IJLG尺度)
+**Discussion:** [Issue #4](https://gitee.com/sinoshop/sinoshop-os/issues/IJLS1X)
 
 ---
 
@@ -121,7 +121,7 @@ Propose a maintenance strategy that reduces the lifecycle maintenance cost of a 
 - Sensor placement optimization for structural health monitoring
 
 **Reference Specs:** /Modular_Floating_Unit/ /Digital_Twin/
-**Discussion:** [Issue #5](https://gitee.com/sinoshop/sinoshop-os/issues/IJLG9N)
+**Discussion:** [Issue #5](https://gitee.com/sinoshop/sinoshop-os/issues/IJLS35)
 
 ---
 
