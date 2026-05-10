@@ -12,12 +12,12 @@
 - Linux: sudo apt install python3.10 python3.10-venv
 
 **验证安装**
- + "" + " + " + "bash
+ + ```bash
 python --version
 pip --version
- + "" + " + " + "
+ + ```
 
-如果  + "" + "pip + "" + " +  命令不可用，请使用  + "" + "python -m pip + "" + " +  代替。
+如果  `pip`  命令不可用，请使用  `python -m pip`  代替。
 
 ---
 
@@ -27,27 +27,27 @@ pip --version
 从 [Good First Issues](https://gitee.com/sinoshop/sinoshop-os/issues?label=Good%20First%20Issue) 中挑一个你感兴趣的。
 
 **第二步：克隆仓库**
- + "" + " + " + "bash
+ + ```bash
 git clone https://gitee.com/sinoshop/sinoshop-os.git
 cd sinoshop-os
- + "" + " + " + "
+ + ```
 
 **第三步：创建分支**
- + "" + " + " + "bash
+ + ```bash
 git checkout -b your-name/issue-number
- + "" + " + " + "
+ + ```
 
 **第四步：写代码 & 签名提交**
- + "" + " + " + "bash
+ + ```bash
 git add .
 git commit -s -m "fix: 描述你的修改"
 git push origin your-name/issue-number
- + "" + " + " + "
+ + ```
 
 **第五步：提交 PR**
 打开 Gitee 仓库页面，点击「Pull Requests」→「新建 Pull Request」。
 
-> ⚠️ 所有提交必须使用  + "" + "git commit -s + "" + " +  进行 DCO 签名，否则 CI 会拦截。
+> ⚠️ 所有提交必须使用  `git commit -s`  进行 DCO 签名，否则 CI 会拦截。
 
 ---
 
@@ -60,9 +60,9 @@ git push origin your-name/issue-number
 - ✅ 你已阅读并同意 [CLA.md](./CLA.md)
 
 **操作方式：**
- + "" + " + " + "bash
+ + ```bash
 git commit -s -m "feat: 你的提交说明"
- + "" + " + " + "
+ + ```
 
 > 无签名的 Pull Request 将在 CI 阶段被自动标记，需补充签名后方可合并。
 
