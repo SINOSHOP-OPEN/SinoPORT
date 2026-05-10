@@ -12,6 +12,10 @@
 > *Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
 > *"我们不是在建造一座桥，而是在部署一套海洋城市操作系统。"
 
+> 🚀 **想参与贡献？** 从这里开始：[ENGINEERING.md](./ENGINEERING.md)（五大工程问题）| [CONTRIBUTING.md](./CONTRIBUTING.md)（贡献指南）
+
+> 🛠️ **工程师入口：** 如果你关注具体的技术问题（控制、结构、流体、嵌入式），请直接查看 [ENGINEERING.md](./ENGINEERING.md) —— 五个明确的工程问题，等待你的解决方案。
+
 > 🛠️ **工程师入口：** 如果你关注具体的技术问题（控制、结构、流体、嵌入式），请直接查看 [ENGINEERING.md](./ENGINEERING.md) —— 五个明确的工程问题，等待你的解决方案。*
 
 [![License](https://img.shields.io/badge/License-SINOSHOP%20Open%20Innovation-blue)](./LICENSE)
