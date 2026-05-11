@@ -14,6 +14,8 @@ Powered by the SINOSFT stabilization protocols under the SINOSHOP ecosystem.
  
 3. 数字孪生与 RWA 融资接口
 为支撑未来的 STO 融资及资产数字化，本目录下的接口定义遵循以下原则：
+
+```
   
 接口类别
 路径/规范
@@ -27,6 +29,8 @@ Powered by the SINOSFT stabilization protocols under the SINOSHOP ecosystem.
 治理投票
 /DAO_Governance/proposal_schema.json
 定义社区对技术升级或资金使用的提案格式。
+
+```
  
 4. 全栈架构图 (SINOSHOP Stack)
 text
@@ -34,6 +38,8 @@ text
 复制
  
 下载
+
+```
  
 ┌─────────────────────────────────────────────────────────────┐
 │                     SES.CITY 愿景层                          │
@@ -53,7 +59,9 @@ text
 │   • Energy_Complementary：多能互补与零耗能潮汐逻辑            │
 │   • Digital_Twin：全域物理-数字孪生映射规范                   │
 └─────────────────────────────────────────────────────────────┘
- 
+
+```
+
 5. 主权声明与不可篡改性
  
 声明类别
