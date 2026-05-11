@@ -76,4 +76,4 @@
 ================================================================
 
 返回主权声明根目录：/SINOSFT-PATH
-**返回主权声明根目录：** [点击返回](../SINOSFT-PATH/)
+**返回：** [`SINOSFT-PATH`](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform/tree/main/SINOSFT-PATH)
