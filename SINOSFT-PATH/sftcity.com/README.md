@@ -74,6 +74,6 @@
 
 ···
 
-**主权声明根目录：** `/SINOSFT-PATH`
+**主权声明根目录：** [`SINOSFT-PATH`](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform/tree/main/SINOSFT-PATH)
 
 ···
