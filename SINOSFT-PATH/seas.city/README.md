@@ -14,8 +14,7 @@ Powered by the SINOSFT stabilization protocols under the SINOSHOP ecosystem.
  
 3. 数字孪生与 RWA 融资接口
 为支撑未来的 STO 融资及资产数字化，本目录下的接口定义遵循以下原则：
- 
- 
+  
 接口类别
 路径/规范
 作用
@@ -33,7 +32,6 @@ Powered by the SINOSFT stabilization protocols under the SINOSHOP ecosystem.
 text
  
 复制
- 
  
 下载
  
@@ -56,9 +54,7 @@ text
 │   • Digital_Twin：全域物理-数字孪生映射规范                   │
 └─────────────────────────────────────────────────────────────┘
  
- 
 5. 主权声明与不可篡改性
- 
  
 声明类别
 内容说明
@@ -71,17 +67,7 @@ text
  
 返回主权声明根目录：/SINOSFT-PATH
  
-操作步骤
-1. 打开：https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform/blob/main/SINOSFT-PATH/seas.city/README.md
-2. 点击 铅笔图标 ✏️
-3. 按住鼠标左键，从开头的 # 🌊 Seas.city 一直拖动到最后的 /SINOSFT-PATH，全部选中
-4. 按 Ctrl+C 复制（Mac 用 Cmd+C）
-5. 在 GitHub 编辑器里 Ctrl+A 全选旧内容 → Ctrl+V 粘贴
-6. 点击 Commit changes
-这样就能一次完成替换。
-本回答由 AI 生成，内容仅供参考，请仔细甄别。
- 
- 
+
  
  
  
