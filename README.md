@@ -6,6 +6,14 @@
 > *我们坦诚宣告：当前阶段无物理实验基地，无建设预算。我们只有思想、标准与数字仿真。*
 > **道不孤，必有邻。**
 >
+> 📜 **Laying the Foundation of Thought**
+> 
+> The definitive Art & Culture Open-Source Strategy (USS v2.0) is now published.
+> [📖 Read the full strategy: USS v2.0 "Laying the Foundation of Thought"](docs/strategy/USS-v2.0-Foundation-of-Thought-EN.md)
+> 
+> *A candid declaration: We have no physical base, no construction budget. What we possess are rigorous standards, a digital simulation platform, and one unwavering conviction:*
+> **The Way is never lonely; it shall always find kindred spirits.**
+>
 # 🌊 SINOSHOP-OS: Marine City Intelligence Ecological Matrix
 
 > **海洋空间智能生态母体 — 核心控制中枢与物理基底开源项目**
