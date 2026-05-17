@@ -6,8 +6,10 @@
 > *A candid declaration: We have no physical base, no construction budget. What we possess are rigorous standards, a digital simulation platform, and one unwavering conviction:*
 > **The Way is never lonely; it shall always find kindred spirits.**
 
----
+> 🔖 **标准化标识 | Standard Identifiers**
+> `SINOSHOP-SFT-COD-R18` · `SINOSHOP-SFT-STRAT v2.0` · `SINOSHOP-SFT-SIM` · `SINOSHOP-SFT-OS v3.6.2`
 
+---
 # 🌊 SINOSHOP-OS: Marine City Intelligent Operating System
 
 > **海上城市智能操作系统 — 核心控制中枢与物理基底开源项目**
