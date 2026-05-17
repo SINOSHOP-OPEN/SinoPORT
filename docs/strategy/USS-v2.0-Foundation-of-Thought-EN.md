@@ -1,6 +1,6 @@
 \### SINOSHOP-OS v3.6.2+ Art \& Culture Open-Source Strategy · Definitive Edition of Pure Thought
 
-
+> **Standard Name:** SINOSHOP-SFT-STRAT v2.0 | **Alias:** USS v2.0 "Laying the Foundation of Thought" | **Repository:** github.com/SINOSHOP-OPEN/SINOSHOP-Platform
 
 \*\*Full Title:\*\* The SINOSHOP Art \& Culture Open-Source Strategy for Digital Co-Creation
 
