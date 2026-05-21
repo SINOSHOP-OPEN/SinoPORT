@@ -12,7 +12,9 @@
 > *Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
 > *"我们不是在建造一座桥，而是在部署一套海洋城市操作系统。"
 
-> 🛠️ **工程师入口：** 如果你关注具体的技术问题（控制、结构、流体、嵌入式），请直接查看 [ENGINEERING.md](./ENGINEERING.md) —— 五个明确的工程问题，等待你的解决方案。*
+> 🛠️ **工程师入口：** 如果你关注具体的技术问题（控制、结构、流体、嵌入式），请直接查看 [ENGINEERING.md](./ENGINEERING.md) —— 五个明确的工程问题，等待你的解决方案。
+> 
+> 🏆 **挑战赛入口：** 参与全球深海技师共建挑战，请查看 [challenges/](./challenges/) — 驭风者 · 全向气旋三维拓扑气动抬升算法正在悬赏中。
 
 [![License](https://img.shields.io/badge/License-SINOSHOP%20Open%20Innovation-blue)](./LICENSE)
 [![Whitepaper](https://img.shields.io/badge/Whitepaper-2026.02-00bcd4)](./Documentation/Marine_City_Whitepaper_2026_CN.pdf)
@@ -92,7 +94,7 @@ SINOSHOP 并非传统意义上征服自然的工程工具，而是与海洋生�
 
 - **技术白皮书全文 (中文版)** — [海洋城市基础平台架构技术报告 PDF](./Documentation/Marine_City_Whitepaper_2026_CN.pdf)
 - **历史档案** — [SINOSHOP 早期概念与 R16-SDK 协议文档](docs/archive/README_original_concept.md)
-
+* **🏆 全球挑战赛** — 驭风者 · 全向气旋三维拓扑气动抬升算法
 ### 核心子模块技术文档
 - 🧠 [全悬浮PID神经控制系统](./姿态控制与稳定性算法/README.md)
 - 🏛️ [桥面高度四重稳定矩阵](./_Stabilization_Quadra/README.md)
