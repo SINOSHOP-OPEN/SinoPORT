@@ -2,6 +2,8 @@
 
 > **海洋空间智能生态母体 — 核心控制中枢与物理基底开源项目**
 > 
+> 🔗 **SINOSHOP 生态导航**：[SINOSHOP-Sandbox](https://gitee.com/sinoshop/SINOSHOP-Sandbox) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/products) · [入门任务](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues)
+
 > **SINOSHOP** — Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform
 > **自浮式智能海洋城市运营平台**
 >
