@@ -1,160 +1,40 @@
-﻿# 🛠️ SINOSHOP-OS Engineering Portal
+﻿# SINOSHOP-OS 工程问题清单
 
-> **This is not a whitepaper. This is a problem set.**
-> If you're a control engineer, CFD specialist, structural analyst, or embedded systems developer — start here.
+## 概述
 
----
-
-## Active Engineering Problems
-
-### Problem 001 — Pitch Stabilization in Sea State 7
-
-**Difficulty:** Expert | **Domain:** Control Systems / Marine Engineering
-
-**Statement:**
-Design a control strategy that maintains pitch deviation ≤ 0.5° for a 尺度 floating module train under Sea State 7 conditions (significant wave height 尺度, peak period 15s).
-
-**Constraints:**
-- Actuator latency < 100ms end-to-end
-- Energy consumption per correction cycle < 5kWh
-- Inter-module coordination deviation ≤ 3cm
-- Must function with 20% sensor dropout
-
-**Needed Contributions:**
-- Nonlinear MPC or robust H∞ controller design
-- CFD validation cases (OpenFOAM preferred)
-- Reinforcement learning approaches for adaptive gain scheduling
-- Hardware-in-the-loop test specifications
-
-**Reference Specs:** /姿态控制与稳定性算法/
-**Discussion:** [Issue #1](https://gitee.com/sinoshop/sinoshop-os/issues/IJLG9J)
+本文档面向关注具体技术问题的工程师。当前已从V1.0架构重组为V2.0 SINOSFT核心架构，以下工程问题亟待解决。
 
 ---
 
-### Problem 002 — Modular Mortise-Tenon Joint Fatigue Life
+## 高优先级工程问题
 
-**Difficulty:** Advanced | **Domain:** Structural Engineering / Materials
+### 1. 尺度直通管榫卯密封标准
+- **问题**：6管并列组成的尺度×尺度扁椭圆隧道，管间榫卯连接在交变载荷下的长期密封性验证。
+- **归属**：`SINOSFT_Core_Tunnel/`
+- **参考**：QW提出的TLCD调谐液柱阻尼器，GE的A-H/A-O双重套管。
 
-**Statement:**
-Design and validate a modular mechanical connection system (mortise-tenon style) between floating units with a fatigue life exceeding 30 years under combined wave, current, and traffic loading.
+### 2. 尺度承托平台的1:1.03浮力重力比精确控制
+- **问题**：柔性连接下，如何动态维持精确的浮力重力比，避免承托力失衡。
+- **归属**：`SINOSFT_Support_尺度/`
+- **参考**：潮汐发电水舱的实时补偿算法。
 
-**Constraints:**
-- Connection time per joint < 4 hours (offshore conditions)
-- Zero underwater welding required
-- Allowable dimensional tolerance ±5mm at interface
-- Material must resist seawater corrosion without cathodic protection renewal < 10 years
+### 3. 海啸场景下模块解耦与自主航行
+- **问题**：生活区/防波堤模块脱离主体独立航行的动力、导航、再对接协议。
+- **归属**：`SINOSFT_Tsunami_Defense/`
+- **参考**：5000秒受控沉浸协议（GE），无燃料海洋运输动力系统。
 
-**Needed Contributions:**
-- FEA fatigue analysis (ANSYS/Abaqus input files welcome)
-- Composite material suggestions with experimental data
-- Accelerated aging test protocols
-- Alternative connection topology proposals
+### 4. MPC模型预测控制的跨子系统调度
+- **问题**：在波浪能、潮汐能、氢能、储能之间实现基于气象预报的滚动优化。
+- **归属**：`SINOSFT_Control/`
+- **参考**：QW的MPC框架，GR的三级分布式弹性控制。
 
-**Reference Specs:** /Modular_Floating_Unit/
-**Discussion:** [Issue #2](https://gitee.com/sinoshop/sinoshop-os/issues/IJLG9K)
-
----
-
-### Problem 003 — Low-Power Marine Digital Twin
-
-**Difficulty:** Intermediate | **Domain:** Embedded Systems / IoT
-
-**Statement:**
-Implement a digital twin synchronization protocol that maintains < 1s latency between physical sensor arrays and the virtual model, with total system power consumption < 500W per 尺度 module segment.
-
-**Constraints:**
-- Must operate on edge computing nodes (no cloud dependency)
-- Bandwidth available: 10Mbps shared across all sensor nodes
-- Must survive 48h without external power
-- Sensor types: IMU (9-DOF), strain gauges, wave radars, ADCP
-
-**Needed Contributions:**
-- Edge computing architecture proposals
-- Data compression algorithms for marine sensor data
-- Power budget analysis and solar/battery sizing
-- Digital twin LOD (Level of Detail) specifications
-
-**Reference Specs:** /Digital_Twin/ /Edge_Computing/
-**Discussion:** [Issue #3](https://gitee.com/sinoshop/sinoshop-os/issues/IJLG9L)
+### 5. 仿生材料在海水浸泡40年的疲劳寿命
+- **问题**：竹集成材乙酰化处理 + 玄武岩纤维蒙皮的实际老化数据。
+- **归属**：`SINOSFT_Materials/`
+- **参考**：QW的乙酰化方案，GR的可替换模块化面板。
 
 ---
 
-### Problem 004 — Wave Prediction + PID Feedforward Integration
+## 历史问题归档
 
-**Difficulty:** Expert | **Domain:** Signal Processing / Control
-
-**Statement:**
-Develop a real-time wave prediction algorithm (3-10s horizon) and integrate it as a feedforward term into the existing PID control architecture to reduce residual motion by ≥40% compared to feedback-only control.
-
-**Constraints:**
-- Prediction computation < 50ms on target hardware
-- Must use only locally observable data (no external weather services)
-- Robust to sensor noise characteristic of X-band radar in heavy rain
-
-**Needed Contributions:**
-- Deterministic sea wave prediction (DSP) implementations
-- Neural network approaches (LSTM/Transformer) with training data requirements
-- Feedforward integration architecture compatible with existing PID loop
-- Benchmark datasets for validation
-
-**Reference Specs:** /姿态控制与稳定性算法/
-**Discussion:** [Issue #4](https://gitee.com/sinoshop/sinoshop-os/issues/IJLS1X)
-
----
-
-### Problem 005 — Maintenance Cost Reduction for Floating Structures
-
-**Difficulty:** Intermediate | **Domain:** Marine Operations / Reliability Engineering
-
-**Statement:**
-Propose a maintenance strategy that reduces the lifecycle maintenance cost of a 100-module floating platform by ≥30% compared to conventional ship-type maintenance schedules, without compromising structural integrity.
-
-**Constraints:**
-- Must account for in-situ repair limitations (no dry-dock available)
-- Inspection interval ≥ 24 months
-- Must integrate with R16 digital twin for condition-based monitoring
-
-**Needed Contributions:**
-- Reliability-centered maintenance (RCM) analysis
-- Corrosion prediction models for tropical marine environments
-- Cost-benefit analysis frameworks
-- Sensor placement optimization for structural health monitoring
-
-**Reference Specs:** /Modular_Floating_Unit/ /Digital_Twin/
-**Discussion:** [Issue #5](https://gitee.com/sinoshop/sinoshop-os/issues/IJLS35)
-
----
-
-## How to Contribute (Engineering Track)
-
-1. **Pick a problem** — Choose from the Active Problems above or propose a new one via Issue.
-2. **Check existing work** — Review the reference specs and any existing branches/PRs.
-3. **Submit a Solution Proposal** — Use the [Engineering Proposal Template](./.github/ENGINEERING_PROPOSAL_TEMPLATE.md).
-4. **Code, Simulate, or Analyze** — Submit your work as a PR with clear documentation.
-5. **Peer Review** — All engineering contributions undergo technical review by domain leads.
-
-## Repository Map for Engineers
-
-| Directory | Contents |
-|---|---|
-| /姿态控制与稳定性算法/ | Control system specs, MATLAB/Simulink models, sensor fusion |
-| /_Stabilization_Quadra/ | Four-layer stabilization architecture, CFD cases |
-| /Modular_Floating_Unit/ | Structural specs, STEP/IGES models, connection interfaces |
-| /Digital_Twin/ | Digital twin data pipeline, LOD specs |
-| /Edge_Computing/ | Edge node architecture, meteo microservices |
-| /RWA_Financing/ | Smart contracts, tokenomics (for engineers curious about the financial layer) |
-| /docs/specs/ | R16 encoding standard, governance, compatibility |
-
-## Communication
-
-- **Technical Discussions:** Gitee Issues or GitHub Issues
-- **Real-time:** [Matrix/Discord — to be configured]
-- **Email:** standards@sinoshop.org
-
----
-
-*"Engineers don't need a vision statement. They need a problem worth solving."
-
----
-**SINOSHOP-Core 技术团队**
-苏月明、梁诚超、梁振雄
+V1.0阶段的工程问题已归档至 `archive/ENGINEERING_v1.0.md`。
