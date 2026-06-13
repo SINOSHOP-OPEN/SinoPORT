@@ -7,7 +7,8 @@
 > 本仓库的逻辑名称为 **SINOSHOP-OS**。
 > - 国内协作：https://gitee.com/sinoshop/sinoshop-os
 > - 国际镜像：https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform
-
+🔬 数学内核标准：https://github.com/SINOSFT/SINOSFT-Core-Math
+🏛️ SINOSFT 组织：https://github.com/SINOSFT
 ---
 
 ## 命名层级
