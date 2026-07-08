@@ -1,37 +1,67 @@
 ﻿# SINOSHOP-OS
-## 海洋空间智能生态母体 — 核心骨干架构：SINOSFT
 
-[![Gitee](https://gitee.com/sinoshop/sinoshop-os)](https://gitee.com/sinoshop/sinoshop-os)
-[![GitHub](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform)](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform)
+海洋空间智能生态母体 — 核心骨干架构：SLFS
 
-> 本仓库的逻辑名称为 **SINOSHOP-OS**。
-> - 国内协作：https://gitee.com/sinoshop/sinoshop-os
-> - 国际镜像：https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform
-🔬 数学内核标准：https://github.com/SINOSFT/SINOSFT-Core-Math
-🏛️ SINOSFT 组织：https://github.com/SINOSFT
+Gitee GitHub
+
+本仓库的逻辑名称为 SINOSHOP-OS。
+
+国内协作：https://gitee.com/sinoshop/sinoshop-os
+国际镜像：https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform
+
+---
+
+## 🚀 最新技术发布：SLFS V17.2-REV.2
+
+**SINOSHOP 可生长的海洋城市基础设施平台（SLFS）技术白皮书 V17.2-REV.2**
+
+- **核心创新：** 五层递进载荷抵消（0-4层，全频段覆盖）/ 横向生长机制（N_grow ≥ 1，平台越大越稳定）/ 整体式密封水舱（650吨恒定配重）/ 开放沙盒验证
+- **物理基准：** 尺度有效净宽 × 尺度高度 × 尺度浮降单元（6×Φ尺度直通管）
+- **开放沙盒：** 完整可运行的 Python 仿真代码（基于 scipy/numpy/matplotlib）
+- **保密策略：** 功能定义接口，核心实现细节（材料配方、阀门设计、控制算法、密封结构）均被封装为宏观参数
+
+👉 **[阅读完整白皮书](./docs/WHITEPAPER_V17.2-REV.2.md)** | **复制运行代码验证 0.251mm 垂荡位移**
+
 ---
 
 ## 命名层级
 
 | 名称 | 全称 | 角色 |
 |:---|:---|:---|
-| **SINOSHOP** | Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform | 总平台/总生态 |
-| **SINOSFT** | Submerged Floating Tunnel | 核心骨干架构（悬浮隧道） |
-| **SINOSHOP-OS** | 本仓库 | 承载SINOSFT核心规范 + SHOP级扩展 |
+| SINOSHOP | Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform | 总平台/总生态 |
+| SLFS | Super Large Floating Structure | 核心骨干架构（太极安全系统标准结构） |
+| SINOSHOP-OS | 本仓库 | 承载SLFS核心规范 + SHOP级扩展 |
 
 ---
 
-## 物理架构六原则
+## 物理架构六原则（SLFS V17.2-REV.2）
 
-1. **基本单元**：尺度直通管 × 6管并列 → 尺度宽 × 尺度高扁椭圆隧道外壳，浮箱道路模块套于中心线下-尺度，悬浮于淡化海水内舱。
-2. **双隧道梯形结构**：两个尺度×尺度隧道 + 尺度水道，尺度间隔横向连通6管，尺度间隔连通12管，形成整体长梯形结构。
-3. **尺度悬浮防波堤承托平台**：位于隧道下方，柔性连接，浮力重力比 = 1:1.03。
-4. **统一标准截面**：水下段与海面段使用相同截面，潮汐发电水舱实现定深悬浮。
-5. **尺度海面浮桥**：中央交通区 + 两侧生活区（各尺度×尺度）+ 最外侧防波堤消浪发电模块（各尺度），以尺度/尺度水道间隔。
-6. **海啸防御**：生活区/防波堤模块可独立航行靠岸或独立下沉，交通区保持定深。
+1. **SLFS标准结构**：内径Φ尺度直通管 × 6管并列 → 外壳内腔尺度有效净宽 × 尺度高度 × 尺度浮降单元（11×尺度模块 + 尺度缓冲件），外壳壁厚尺度，外壳外廓尺度。6条直通管在尺度有效净宽内一字平排，浮箱道路模块套于中心线下-尺度，悬浮于淡化海水内舱。
+
+2. **五层载荷抵消体系**：0层（水锚锤+调节水层，95%能量）→ 1层（9cm六向水托盘，2.5%）→ 2层（压电缓冲，1.0%）→ 3层（虚拟锚锤，1.0%）→ 4层（1cm底部缓冲，0.5%），全频段覆盖0-500Hz。
+
+3. **横向生长机制**：N_grow ≥ 1，系统静水回复刚度与总质量同步线性增长，平台规模越大稳定性越高（N_grow=5时垂荡位移仅0.25mm）。
+
+4. **整体式密封水舱**：水锚锤（650吨恒定配重）与A/B层载荷调节水层（437吨动态水体）均为整体式密封水舱，内部水体完全连通，隔板防晃不隔水。
+
+5. **开放沙盒验证**：提供完整可运行的Python仿真代码（基于scipy/numpy/matplotlib），供全球工程师在控制算法、波浪模拟、多体动力学等领域参与优化。
+
+6. **100年设计寿命**：刚性外壳不参与机械变形，五层系统分频段吸收载荷，核心机密（材料配方、阀门设计、控制算法）封装为宏观参数，实现"开放沙盒，封闭核心"。
 
 ---
 
 ## 仓库结构
+sinoshop-os/
+├── docs/
+│ └── WHITEPAPER_V17.2-REV.2.md # 最新技术白皮书
+├── src/ # 源代码目录
+├── tests/ # 测试目录
+├── scripts/ # 工具脚本
+├── README.md
+├── LICENSE
+└── CONTRIBUTING.md
 
 
+---
+
+**简介**：SINOSHOP-OS 海洋空间智能生态母体 — 核心骨干架构 SLFS（悬浮隧道基础设施开源标准）V17.2-REV.2。观天之道，执天之行，造福人民。
