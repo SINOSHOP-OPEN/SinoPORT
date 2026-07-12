@@ -61,7 +61,15 @@ sinoshop-os/
 ├── LICENSE
 └── CONTRIBUTING.md
 
+## 🌿 生态项目 (Ecosystem Projects)
 
+基于 SINOSHOP-OS 定义的 SLFS 核心规范，以下项目正在构建开放海洋工程生态：
+
+- **[SINOSHIP/sinoshop-openice](https://gitee.com/SINOSHIP/sinoshop-openice) — 极地氢能全链条仿真平台**  
+  完整遵循 SLFS 物理基准（尺度×尺度，五层载荷抵消体系），提供高保真仿真与算法验证环境。
+
+- **[SINOSHIP/sinoship](https://gitee.com/SINOSHIP/sinoship) — 船舶设计与航运开源基础设施**  
+  面向船舶建模、仿真与优化领域的开源工具集，是 SLFS 架构在船舶工程领域的延伸应用。
 ---
 
 **简介**：SINOSHOP-OS 海洋空间智能生态母体 — 核心骨干架构 SLFS（悬浮隧道基础设施开源标准）V17.2-REV.2。观天之道，执天之行，造福人民。
