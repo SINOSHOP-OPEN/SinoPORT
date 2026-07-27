@@ -1,8 +1,10 @@
-﻿# SINOSHOP-OS · 江海空间生态母体
+# SINOSHOP-OS · 江海空间生态母体
 
 > **贞忠昭日月，惠民播春秋**
 >
 > 海洋空间智能生态母体 — 核心骨干架构：SLFS
+> 
+> 一个由退休工程师与大学生共同发起的开源探索项目。我们尝试用“轻量化悬浮造城”的理念，为江海工程提供一种“低环境冲击、可复制”的未来方案。
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Gitee Stars](https://gitee.com/SINOSHOP/sinoshop-os/badge/star.svg?theme=dark)](https://gitee.com/SINOSHOP/sinoshop-os)
 
@@ -10,7 +12,7 @@
 
 **“为众生安，技术开源。”**
 
-一个由退休工程师与大学生共同发起的开源探索项目。完全开放核心架构，邀请全球开发者与工程师，共同审视、验证、演进这套体系。
+这不是一句口号，而是我们的行动起点：**完全开放核心架构，邀请全球开发者与工程师，共同审视、验证、演进这套体系。**
 
 ---
 
