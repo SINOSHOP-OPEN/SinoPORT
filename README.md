@@ -1,4 +1,5 @@
-# SINOSHOP-OS · 江海空间生态母体
+🌊 [SINOSHOP 技术导航中枢](https://gitee.com/sinoshop/sinoshop-hub) · [综合讨论](https://gitee.com/sinoshop/sinoshop-hub/issues) · 本仓库状态：🟢 活跃
+SINOSHOP-OS · 江海空间生态母体
 
 > **贞忠昭日月，惠民播春秋**
 >
