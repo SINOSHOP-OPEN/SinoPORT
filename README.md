@@ -96,3 +96,4 @@ sinoshop-os/
 观天之道，执天之行，造福人民。  
 海生电、电养船、船搭桥、桥造城、城惠民。
 **简介**：SINOSHOP-OS 海洋空间智能生态母体 — 核心骨干架构 SLFS（悬浮隧道基础设施开源标准）V17.2-REV.2。观天之道，执天之行，造福人民。
+🌐 **English Version**: [View on GitHub](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform)
