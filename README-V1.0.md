@@ -1,158 +1,155 @@
-# SinoPORT — Modular Smart Port System
+# SinoPORT — 模块化智慧港口系统
 
-**Fiber-Reinforced Concrete Composite Structure · Bio-Inspired Superhydrophobic Protection · Three-Zone Wave Energy Generation · Seven-Level Ecological Fishway**
+**纤维混凝土复合结构 · 超疏水仿生防护 · 三区段波浪能发电 · 七级活水生态鱼道**
 
-> Observe Nature's Order, Align with Ocean's Rhythm, Benefit All People.
-
----
-
-## 📌 Project Overview
-
-SinoPORT is a modular smart port solution within the SINOSHOP ecosystem — the world's first modular smart port system that redefines the underlying logic of port operations.
-
-The core innovation is the **fiber-reinforced concrete-steel sealed hollow truss with递减 cross-section composite structure**, achieving synergistic optimization of lightweight, high toughness, and marine corrosion resistance. The bio-inspired superhydrophobic coating enables integrated drag reduction, antifouling, and self-cleaning. The pioneering **Seven-Level Full-Water Ecological Fishway** deeply integrates ecological protection with engineering construction, achieving a paradigm shift from "ecological loss" to "ecological gain" (Net-Positive).
+> 观天之道，执天之行，造福人民。
 
 ---
 
-## 🎯 Core Breakthroughs
+## 📌 项目简介
 
-| Technology Module | Core Innovation | Key Metrics |
+SinoPORT 是 SINOSHOP 生态下的模块化智慧港口解决方案，全球首创的模块化智慧港口系统，重构港口运营底层逻辑。
+
+项目核心是**纤维混凝土钢材密封中空桁架凹槽递减复合结构**，实现了轻量化、高强韧性与耐海洋腐蚀的协同优化。通过仿生超疏水涂层实现减阻、防污、自清洁一体化，独创的**七级全域活水鱼道生态网络**将生态保护与工程建设深度融合，实现从“生态损耗”到“生态增益”的范式转变。
+
+---
+
+## 🎯 核心突破
+
+| 技术模块 | 核心突破 | 关键指标 |
 | :--- | :--- | :--- |
-| **Composite Structure** | Fiber-reinforced concrete + steel + hollow truss +递减 cross-section, four-dimensional synergy | Equivalent density 450–650 kg/m³ (74%–82% reduction vs. conventional) |
-| **Bio-Inspired Protection** | Superhydrophobic micro-nano structures — drag reduction, antifouling, self-cleaning | Drag reduction 8%–17%, antifouling lifespan ≥20 years |
-| **Anchor-Free System** | Dual-timescale adaptive depth-keeping suspension, zero energy consumption | 100% site-selection freedom, no seabed anchoring required |
-| **Wave Energy Generation** | Three-zone differentiated capture (Seaward + Intermediate + Harbor) | Annual generation 42–78 GWh |
-| **Ecological Symbiosis** | Seven-Level Full-Water Fishway + Mangrove wave-dissipating belt | Paradigm shift from "ecological loss" to "ecological gain" |
-| **Investment Return** | 30%–35% reduction in initial investment | Payback period 3–5 years (vs. 10–30 years conventional) |
+| **复合结构** | 纤维混凝土+钢材+中空桁架+凹槽递减截面，四维协同 | 等效密度 450–650 kg/m³（较传统降低 74%~82%） |
+| **仿生防护** | 超疏水微纳结构，减阻·防污·自清洁一体化 | 减阻 8%~17%，防污寿命 ≥20 年 |
+| **无须锚固** | 双时间尺度自适应定深悬浮系统，零耗能 | 100% 海域选址自由，无需海床锚固 |
+| **波浪能发电** | 三区段差异化捕获（迎海区+中间区+靠港区） | 年发电量 42~78 GWh |
+| **生态共生** | 七级全域活水鱼道 + 红树林消浪带 | 从“生态损耗”到“生态增益”的转变 |
+| **投资回报** | 综合初始投资降低 30%~35% | 投资回收期 3~5 年（传统 10~30 年） |
 
 ---
 
-## 🧬 Technology Source & Architecture
+## 🧬 技术来源与体系
 
-This repository is part of the SINOSHOP marine space intelligent ecological matrix, providing infrastructure tools for the "Smart Port" dimension.
+本仓库是 SINOSHOP 海洋空间智能生态母体的一部分，为“智慧港口”维度提供基础设施工具。
 
-| Layer | Project | Responsibility |
+| 层级 | 项目 | 职责 |
 | :--- | :--- | :--- |
-| **Theory** | SINOSFT | Mathematical kernel, formal verification, infrastructure standards |
-| **Platform** | SINOSHOP-OS | SLFS core architecture and physical baseline |
-| **Equipment** | SINOSHIP | Ships and marine mobile equipment |
-| **Port** | **SinoPORT** | Modular smart port system |
+| **理论层** | SINOSFT | 数学内核、形式化验证、基础设施标准 |
+| **平台层** | SINOSHOP-OS | SLFS 核心架构与物理基准 |
+| **装备层** | SINOSHIP | 船舶与海上移动运输装备 |
+| **港口层** | **SinoPORT** | 模块化智慧港口系统 |
 
 ---
 
-## 🏗️ Core Technology Architecture
+## 🏗️ 核心技术架构
 
-### 1. Fiber-Reinforced Concrete-Steel Composite Structure
+### 1. 纤维混凝土钢材复合结构
 
-Multi-material collaborative design: "steel-FRP rebar + fiber-reinforced concrete + sealed hollow truss +递减 cross-section":
+采用“钢-纤维复合筋 + 纤维混凝土 + 密封中空桁架 + 凹槽递减截面”多材料协同设计：
 
-| Layer | Material/Structure | Function |
+| 层级 | 材料/结构 | 功能 |
 | :--- | :--- | :--- |
-| Inner Core | Steel Q345B | Tensile/shear resistance, ductility |
-| Primary Load-Bearing | Fiber-reinforced concrete | Compressive strength, durability |
-| Outer Protection | Bio-inspired superhydrophobic coating | Antifouling, drag reduction, corrosion protection |
-| Hollow Cavity | Sealed hollow truss | Self-floating, buoyancy reserve (60%–80%) |
+| 内芯强化层 | 钢材 Q345B | 抗拉、抗剪，提供延性 |
+| 主承重层 | 纤维混凝土 | 抗压、耐久性 |
+| 外层防护层 | 仿生超疏水涂层 | 防污、减阻、防腐蚀 |
+| 中空腔体层 | 密封中空桁架 | 自浮、浮力储备（60%~80%） |
 
-### 2. Anchor-Free Depth-Keeping Suspension System
+### 2. 无须锚固定深悬浮系统
 
-- **High-frequency wave suppression (second response)**: Floating pressure-wing passively absorbs wave energy
-- **Low-frequency tidal compensation (hour response)**: Hydraulic low-pass filter automatically adjusts water tanks
-- **Zero external energy consumption**: Fully passive system design
-- **Core technology protection**: PCT International Patent (Application No.: PCT/CN2025/139199)
+- **高频波浪抑制（秒级响应）**：浮动压浪翼被动吸收波浪动能
+- **低频潮汐补偿（小时级响应）**：水力低通滤波器自动调节水舱
+- **零外部能源消耗**：纯被动式系统设计
+- **核心技术保障**：PCT 国际专利（申请号：PCT/CN2025/139199）
 
-### 3. Three-Zone Differentiated Wave Energy Generation
+### 3. 三区段差异化波浪能发电
 
-| Zone | Length | Function | Annual Generation |
+| 区段 | 长度 | 功能 | 年发电量 |
 | :--- | :--- | :--- | :--- |
-| Seaward Zone | 100m | Wave dissipation & initial capture | 10–18 GWh |
-| Intermediate Zone | 100m | Main generation (Venturi array) | 30–55 GWh |
-| Harbor Zone | 100m | Ecological empowerment | 2.0–4.5 GWh |
+| 迎海区 | 100m | 消浪捕获 | 10~18 GWh |
+| 中间区 | 100m | 主力发电（文丘里阵列） | 30~55 GWh |
+| 靠港区 | 100m | 生态赋能 | 2.0~4.5 GWh |
 
-> **Total Annual Generation**: 42–78 GWh
+> **合计年发电量**：42~78 GWh
 
-### 4. Seven-Level Full-Water Ecological Fishway
+### 4. 七级全域活水生态鱼道
 
-- **Fishway System**: Inner diameter ≥2m pure ecological channel — zero fish migration obstruction
-- **Wave-Dissipating Garden**: Mangrove ecological wave-dissipating belt, restoring intertidal habitats
-- **Flowing Water Circulation**: Tidal-driven self-purification circulation system
+- **鱼道系统**：内径 ≥2m 纯生态通道，鱼类洄游零阻断
+- **消浪花园**：红树林生态消浪带，修复潮间带生境
+- **活水循环**：潮汐动力驱动的自净循环系统
 
 ---
 
-## 📊 Performance Metrics
+## 📊 性能指标
 
-| Metric | Conventional Solution | SinoPORT Solution | Improvement |
+| 指标 | 传统方案 | SinoPORT 方案 | 优化幅度 |
 | :--- | :--- | :--- | :--- |
-| Structural Equivalent Density | 2,500 kg/m³ | 450–650 kg/m³ | ↓ 74%–82% |
-| Buoyancy Reserve | Conventional | 60%–80% | Far exceeds conventional |
-| Antifouling Coating Lifespan | 3–5 years | ≥20 years | ↑ 4–5× |
-| Drag Reduction | — | 8%–17% | Significant energy savings |
-| Design Life | 20–30 years | ≥50 years | ↑ 2× |
-| Foundation Treatment Cost | 100–200 million CNY | 0 (anchor-free) | ↓ 100% |
-| Per-Berth Comprehensive Investment | 580–850 million CNY | 405–540 million CNY | ↓ 30%–35% |
-| Investment Payback Period | 10–30 years | 3–5 years | ↓ 70%–80% |
+| 结构等效密度 | 2,500 kg/m³ | 450–650 kg/m³ | ↓ 74%~82% |
+| 浮力储备 | 常规 | 60%~80% | 远超传统 |
+| 防污涂层寿命 | 3–5 年 | ≥20 年 | ↑ 4~5 倍 |
+| 减阻率 | — | 8%~17% | 显著节能 |
+| 设计寿命 | 20–30 年 | ≥50 年 | ↑ 2 倍 |
+| 地基处理成本 | 1.0–2.0 亿元 | 0（无需锚固） | ↓ 100% |
+| 单泊位综合投资 | 5.8–8.5 亿元 | 4.05–5.4 亿元 | ↓ 30%~35% |
+| 投资回收期 | 10–30 年 | 3–5 年 | ↓ 70%~80% |
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ 技术栈
 
-| Domain | Technology/Tools |
+| 领域 | 技术/工具 |
 | :--- | :--- |
-| Structural Design | FreeCAD Digital Twin Framework |
-| Materials Science | Fiber-reinforced concrete, FRP rebar, bio-inspired superhydrophobic coatings |
-| Fluid Mechanics | Venturi guide tube arrays, wave energy capture |
-| Ecological Engineering | Seven-Level fishway, mangrove wave dissipation |
-| Energy Systems | Three-zone wave energy generation, ceramic sand thermal storage |
-| Blockchain | RWA digital asset tokenization |
+| 结构设计 | FreeCAD 数字孪生骨架 |
+| 材料科学 | 纤维混凝土、FRP 筋、仿生超疏水涂层 |
+| 流体力学 | 文丘里导流管阵列、波浪能捕获 |
+| 生态工程 | 七级活水鱼道、红树林消浪 |
+| 能源系统 | 三区段波浪能发电、陶瓷沙石储能 |
+| 区块链 | RWA 数字资产确权 |
 
 ---
 
-## 🔗 Quick Links
+## 🔗 快速链接
 
-- 🏠 **Project Homepage**: [https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
-- 📂 **SINOSHOP Organization**: [https://gitee.com/sinoshop](https://gitee.com/sinoshop)
-- 🌊 **SINOSHOP-OS**: [https://gitee.com/sinoshop/sinoshop-os](https://gitee.com/sinoshop/sinoshop-os)
-- 🌉 **SINOSFT**: [https://gitee.com/sinoshop/sinosft](https://gitee.com/sinoshop/sinosft)
-- 🔥 **SINOhotSKIN**: [https://gitee.com/sinoshop/sinohotskin](https://gitee.com/sinoshop/sinohotskin)
-- 🚢 **SINOSHIP**: [https://gitee.com/sinoshop/SINOSHIP](https://gitee.com/sinoshop/SINOSHIP)
-- 📧 **Contact Email**: standards@sinoshop.org
-
----
-
-## 📜 Open Source License
-
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+- 🏠 **项目主页**：[https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
+- 📂 **SINOSHOP 组织**：[https://gitee.com/sinoshop](https://gitee.com/sinoshop)
+- 🌊 **SINOSHOP-OS**：[https://gitee.com/sinoshop/sinoshop-os](https://gitee.com/sinoshop/sinoshop-os)
+- 🌉 **SINOSFT**：[https://gitee.com/sinoshop/sinosft](https://gitee.com/sinoshop/sinosft)
+- 🔥 **SINOhotSKIN**：[https://gitee.com/sinoshop/sinohotskin](https://gitee.com/sinoshop/sinohotskin)
+- 🚢 **SINOSHIP**：[https://gitee.com/sinoshop/SINOSHIP](https://gitee.com/sinoshop/SINOSHIP)
+- 📧 **联系邮箱**：standards@sinoshop.org
 
 ---
 
-## 🤝 Contributing
+## 📜 开源许可证
 
-Issues and Pull Requests are welcome. Please ensure code style consistency and include corresponding test cases.
-
-> *Steadfast loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
+本项目采用 **Apache License 2.0**。详见 [LICENSE](LICENSE) 文件。
 
 ---
 
-## 📬 Contact & Community
+## 🤝 参与贡献
 
-🌊 **SINOSHOP** — Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform
+欢迎通过 Issue 或 Pull Request 参与贡献。请确保代码风格一致，并包含相应的测试用例。
 
-Based on Submerged Floating Tunnel (SFT) core technology, building a self-floating, intelligent, networked marine city operating platform.
-
-- 🏠 **Project Homepage**: [https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
-- 📂 **Open Source Repository**: [https://gitee.com/sinoshop/sinoshop-os](https://gitee.com/sinoshop/sinoshop-os)
-- 🌐 **GitHub International Mirror**: [SINOSHOP-OPEN](https://github.com/SINOSHOP-OPEN)
-- 📧 **Contact Email**: standards@sinoshop.org
+> 贞忠昭日月，惠民播春秋。
 
 ---
 
-> 🌊 *Observe Nature's Order, Align with Ocean's Rhythm, Benefit All People.*  
-> 🌊 *Sea Generates Power → Power Sustains Ships → Ships Bridge Cities → Cities Benefit People → Aerospace for All → Harmony for All Beings.*  
-> ✨ *Loyalty shines through ages; benevolence spreads across seasons.*
+## 📬 联系方式
+
+🌊 **SINOSHOP** — 自浮式智能海洋城市运营平台
+
+基于悬浮隧道（SFT）核心技术，构建自浮式·智能·网络化·海洋城市·运营平台。
+
+- 🏠 **项目主页**：[https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
+- 📂 **开源仓库**：[https://gitee.com/sinoshop/sinoshop-os](https://gitee.com/sinoshop/sinoshop-os)
+- 🌐 **GitHub 国际镜像**：[SINOSHOP-OPEN](https://github.com/SINOSHOP-OPEN)
+- 📧 **联系邮箱**：standards@sinoshop.org
 
 ---
 
-🇨🇳 **中文版本**: [在 Gitee 上查看](https://gitee.com/sinoshop/SinoPORT)
+> 🌊 观天之道，执天之行，造福人民。  
+> 🌊 **海生电、电养船、船搭桥、桥造城、航天海、众生安。**  
+> ✨ **贞忠昭日月，惠民播春秋。**
 
+🌐 **English Version**: [View on GitHub](https://github.com/SINOSHOP-OPEN/SinoPORT)
 ---
 
-*Last Updated: 2026-09-02 | SinoPORT v1.0*
+*最后更新：2026-09-02 | SinoPORT v1.0*
