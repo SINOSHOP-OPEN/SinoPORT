@@ -1,0 +1,36 @@
+# SINOPORT — 运行依赖
+#
+# 安装：
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Windows)
+#   source .venv/bin/activate        (macOS / Linux)
+#   pip install -r requirements.txt
+#   python demo.py
+#
+# 说明
+# ----
+# demo.py 与 demo_evolution.py 只需 NumPy（纯几何实算，不需要 CAD）。
+# 下面的 Pillow 仅供截图/字幕工具使用；FreeCAD 与 FFmpeg 为可选项，
+# 分别用于 OCC 实体建模与视频渲染，均不参与 demo.py 的判定链。
+
+# ---- 核心（demo.py 必需）----
+# 本机实测版本：Python 3.13.14 + NumPy 2.5.3
+numpy>=2.0,<3.0
+
+# ---- 可选：截图与 1080p 素材重绘（tools/、captions/）----
+Pillow>=10.0
+
+# ---- 可选：OCC 实体建模（src/model/build_pyramid_r6.py）----
+# FreeCAD 无法通过 pip 安装，需单独安装：
+#   Windows: https://www.freecad.org/downloads.php
+# 然后用其解释器运行：
+#   freecadcmd src/model/build_pyramid_r6.py
+#
+# ---- 可选：视频渲染与编码 ----
+# FFmpeg 需系统安装并加入 PATH（https://ffmpeg.org/download.html）
+
+# ---- 说明 ----
+# 本项目自有代码：光栅化引擎（src/core/raster_core.py）、
+# 全部参数源（src/specs/）、全部校验脚本（src/verify/）。
+# 第三方库仅作通用工具调用，未链接其库，不触发 GPL 传染。
+# 详见 DEPENDENCIES.md。
