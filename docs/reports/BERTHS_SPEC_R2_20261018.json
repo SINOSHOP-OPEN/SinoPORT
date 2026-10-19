@@ -1,0 +1,183 @@
+{
+ "date": "2026-10-18",
+ "revision": "r2",
+ "captain_ruling_verbatim": "9 条泊位路基应该全部被包含在直径大路和悬浮防波堤组成的半圆形之内，请在全部完工之前，检查修正。",
+ "containment_rule": "max_radius(x, w, y) = max over corners of sqrt(cx^2 + cy^2) ; 要求 <= 1650",
+ "chord_r_m": 1650.0,
+ "road_main_len_m": 3300.0,
+ "road_main_w_m": 108.0,
+ "min_clearance_m": 300.0,
+ "berths": [
+  {
+   "code": "BERTH-1",
+   "cn": "小船泊1",
+   "kind": "小",
+   "width_m": 27.0,
+   "center_x_m": -1293.0,
+   "quay_end_y_m": 150.0,
+   "dist_to_center_m": 1301.7,
+   "max_radius_m": 1315.1,
+   "clearance_m": 334.9,
+   "arc_gap_ref_m": 348.3,
+   "arc_gap_calc_m": 348.3
+  },
+  {
+   "code": "BERTH-2",
+   "cn": "中船泊2",
+   "kind": "中",
+   "width_m": 54.0,
+   "center_x_m": -1042.5,
+   "quay_end_y_m": 690.0,
+   "dist_to_center_m": 1250.2,
+   "max_radius_m": 1272.8,
+   "clearance_m": 377.2,
+   "arc_gap_ref_m": 399.8,
+   "arc_gap_calc_m": 399.8
+  },
+  {
+   "code": "BERTH-3",
+   "cn": "中船泊3",
+   "kind": "中",
+   "width_m": 54.0,
+   "center_x_m": -778.5,
+   "quay_end_y_m": 690.0,
+   "dist_to_center_m": 1040.3,
+   "max_radius_m": 1060.6,
+   "clearance_m": 589.4,
+   "arc_gap_ref_m": 609.7,
+   "arc_gap_calc_m": 609.7
+  },
+  {
+   "code": "BERTH-4",
+   "cn": "大船泊4",
+   "kind": "大",
+   "width_m": 81.0,
+   "center_x_m": -396.0,
+   "quay_end_y_m": 900.0,
+   "dist_to_center_m": 983.3,
+   "max_radius_m": 1000.3,
+   "clearance_m": 649.7,
+   "arc_gap_ref_m": 666.7,
+   "arc_gap_calc_m": 666.7
+  },
+  {
+   "code": "BERTH-5",
+   "cn": "大船泊5",
+   "kind": "大",
+   "width_m": 81.0,
+   "center_x_m": 0.0,
+   "quay_end_y_m": 900.0,
+   "dist_to_center_m": 900.0,
+   "max_radius_m": 900.9,
+   "clearance_m": 749.1,
+   "arc_gap_ref_m": 750.0,
+   "arc_gap_calc_m": 750.0
+  },
+  {
+   "code": "BERTH-6",
+   "cn": "大船泊6",
+   "kind": "大",
+   "width_m": 81.0,
+   "center_x_m": 396.0,
+   "quay_end_y_m": 900.0,
+   "dist_to_center_m": 983.3,
+   "max_radius_m": 1000.3,
+   "clearance_m": 649.7,
+   "arc_gap_ref_m": 666.7,
+   "arc_gap_calc_m": 666.7
+  },
+  {
+   "code": "BERTH-7",
+   "cn": "中船泊7",
+   "kind": "中",
+   "width_m": 54.0,
+   "center_x_m": 778.5,
+   "quay_end_y_m": 690.0,
+   "dist_to_center_m": 1040.3,
+   "max_radius_m": 1060.6,
+   "clearance_m": 589.4,
+   "arc_gap_ref_m": 609.7,
+   "arc_gap_calc_m": 609.7
+  },
+  {
+   "code": "BERTH-8",
+   "cn": "中船泊8",
+   "kind": "中",
+   "width_m": 54.0,
+   "center_x_m": 1042.5,
+   "quay_end_y_m": 690.0,
+   "dist_to_center_m": 1250.2,
+   "max_radius_m": 1272.8,
+   "clearance_m": 377.2,
+   "arc_gap_ref_m": 399.8,
+   "arc_gap_calc_m": 399.8
+  },
+  {
+   "code": "BERTH-9",
+   "cn": "小船泊9",
+   "kind": "小",
+   "width_m": 27.0,
+   "center_x_m": 1293.0,
+   "quay_end_y_m": 150.0,
+   "dist_to_center_m": 1301.7,
+   "max_radius_m": 1315.1,
+   "clearance_m": 334.9,
+   "arc_gap_ref_m": 348.3,
+   "arc_gap_calc_m": 348.3
+  }
+ ],
+ "r1_erroneous": {
+  "total_length_m": 5760.0,
+  "length_per_berth_m": 640.0,
+  "finger_length_m": 420.0,
+  "finger_direction": "-Y（弦线外侧，违反包含关系）",
+  "why_wrong": "总长 5760 > 半圆弧长 5183.6 m，数学上装不下；且泊位指伸向 -Y 即半圆之外"
+ },
+ "checks": [
+  {
+   "check": "1 九条泊位全部在半圆内（最大半径 ≤ 1,650 m）",
+   "pass": true,
+   "detail": "最大半径 1315.1 m（泊5），最小余量 334.9 m（泊1/泊9）"
+  },
+  {
+   "check": "2 全部角点在 y ≥ 0 的半圆内域",
+   "pass": true,
+   "detail": "泊位带状区 y ∈ [0, 路基末端Y]，均在正 Y 侧"
+  },
+  {
+   "check": "3 距弧径向距离复算与 V6.3 §4.27.4 吻合（±1 m）",
+   "pass": true,
+   "detail": "9 条全部吻合"
+  },
+  {
+   "check": "4 距弧余量 ≥ 300 m（小船回旋安全红线）",
+   "pass": true,
+   "detail": "最小余量 334.9 m（泊1/泊9）"
+  },
+  {
+   "check": "5 9 泊位总宽 = 513 m（§4.27.1 红线）",
+   "pass": true,
+   "detail": "27+54+54+81+81+81+54+54+27 = 513 m"
+  },
+  {
+   "check": "6 左右对称（泊1/9、2/8、3/7、4/6 中心 X 互为相反数，泊5 居中）",
+   "pass": true,
+   "detail": "4 对全部对称，泊5 中心 X = 0"
+  },
+  {
+   "check": "7 泊位带落在主段 ±1,650 m 之内",
+   "pass": true,
+   "detail": "X ∈ [-1306.5, 1306.5]，主段半长 1650"
+  },
+  {
+   "check": "8 r1 的 5,760 m 总长已废止（> 半圆弧长 5183.6 m）",
+   "pass": true,
+   "detail": "5,760 > 5183.6，超出 576.4 m —— 数学上装不下，故 r1 参数错误"
+  },
+  {
+   "check": "9 r1 的泊位指 -Y 方向已废止（违反包含关系）",
+   "pass": true,
+   "detail": "r1 指尖 y = −474 m 在弦线外；r2 泊位 y ∈ [0, +900]"
+  }
+ ]
+}
