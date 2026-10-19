@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-18",
+ "revision": "R6",
+ "spec": {
+  "date": "2026-10-18",
+  "revision": "R5",
+  "captain_ruling_verbatim": "共开孔 7 排 128 个各直径 1 米，上的第一排 1 个，第二排 1 个，第三排 2 个，第四排 3 个，第五排 5 个，第六排 8 个，下的第七排 13 个孔",
+  "captain_adjudication": {
+   "total": "7 排求和 = 33/面 x 4 面 = 132（船长裁定以此为准；原文「128」视为笔误）",
+   "bottom_row_13": "13 孔排布：间隙按剩余宽度自动分摊（船长 12:06 纠正）——g = (18000 − 13000)/14 = 357.14 mm，13×1000 + 14×357.14 = 18000 精确吻合。我此前误实现为「孔相切 + 贴边缘」，导致 OCC 退化边、实体 isValid()=False、挖除仅 34%，已废止"
+  },
+  "ruling": {
+   "rows_per_slope": 7,
+   "holes_per_row_top_down": [
+    1,
+    1,
+    2,
+    3,
+    5,
+    8,
+    13
+   ],
+   "row_t_top_down": [
+    0.86,
+    0.72,
+    0.6,
+    0.48,
+    0.36,
+    0.24,
+    0.12
+   ],
+   "holes_per_slope": 33,
+   "n_slopes": 4,
+   "holes_total": 132,
+   "hole_dia_mm": 900.0,
+   "gap_rule": "间隙按该排剩余宽度自动分摊：g = (W(t) - n*D) / (n + 1)；两端余量亦为 g",
+   "hole_sink_mm": 75.0,
+   "slant_length_mm": 12727.92
+  },
+  "rows": [
+   {
+    "row": 1,
+    "holes": 1,
+    "t": 0.86,
+    "face_width_mm": 2520.0,
+    "need_mm": 900.0,
+    "spare_mm": 1620.0,
+    "gap_mm": 810.0,
+    "pitch_mm": 1710.0,
+    "t_limit": 0.95,
+    "fits": true,
+    "dist_from_apex_mm": 1781.9,
+    "height_z_mm": 16740.0
+   },
+   {
+    "row": 2,
+    "holes": 1,
+    "t": 0.72,
+    "face_width_mm": 5040.0,
+    "need_mm": 900.0,
+    "spare_mm": 4140.0,
+    "gap_mm": 2070.0,
+    "pitch_mm": 2970.0,
+    "t_limit": 0.95,
+    "fits": true,
+    "dist_from_apex_mm": 3563.8,
+    "height_z_mm": 15480.0
+   },
+   {
+    "row": 3,
+    "holes": 2,
+    "t": 0.6,
+    "face_width_mm": 7200.0,
+    "need_mm": 1800.0,
+    "spare_mm": 5400.0,
+    "gap_mm": 1800.0,
+    "pitch_mm": 2700.0,
+    "t_limit": 0.9,
+    "fits": true,
+    "dist_from_apex_mm": 5091.2,
+    "height_z_mm": 14400.0
+   },
+   {
+    "row": 4,
+    "holes": 3,
+    "t": 0.48,
+    "face_width_mm": 9360.0,
+    "need_mm": 2700.0,
+    "spare_mm": 6660.0,
+    "gap_mm": 1665.0,
+    "pitch_mm": 2565.0,
+    "t_limit": 0.85,
+    "fits": true,
+    "dist_from_apex_mm": 6618.5,
+    "height_z_mm": 13320.0
+   },
+   {
+    "row": 5,
+    "holes": 5,
+    "t": 0.36,
+    "face_width_mm": 11520.0,
+    "need_mm": 4500.0,
+    "spare_mm": 7020.0,
+    "gap_mm": 1170.0,
+    "pitch_mm": 2070.0,
+    "t_limit": 0.75,
+    "fits": true,
+    "dist_from_apex_mm": 8145.9,
+    "height_z_mm": 12240.0
+   },
+   {
+    "row": 6,
+    "holes": 8,
+    "t": 0.24,
+    "face_width_mm": 13680.0,
+    "need_mm": 7200.0,
+    "spare_mm": 6480.0,
+    "gap_mm": 720.0,
+    "pitch_mm": 1620.0,
+    "t_limit": 0.6,
+    "fits": true,
+    "dist_from_apex_mm": 9673.2,
+    "height_z_mm": 11160.0
+   },
+   {
+    "row": 7,
+    "holes": 13,
+    "t": 0.12,
+    "face_width_mm": 15840.0,
+    "need_mm": 11700.0,
+    "spare_mm": 4140.0,
+    "gap_mm": 295.71,
+    "pitch_mm": 1195.71,
+    "t_limit": 0.35,
+    "fits": true,
+    "dist_from_apex_mm": 11200.6,
+    "height_z_mm": 10080.0
+   }
+  ],
+  "superseded": {
+   "R3": {
+    "rows": 3,
+    "per_row": 9,
+    "per_slope": 27,
+    "total": 108
+   },
+   "R4": {
+    "rows": 5,
+    "row_n": [
+     1,
+     2,
+     6,
+     9,
+     9
+    ],
+    "per_slope": 27,
+    "total": 108
+   },
+   "R5_wording_128": "原文「共 128 个」与 7 排求和 132 互斥，船长裁定取 132"
+  }
+ },
+ "parts": {
+  "PYRAMID_R6": {
+   "vol_m3": 103.9207,
+   "faces": 147,
+   "solids": 1,
+   "valid": true,
+   "removed_by_holes_m3": 27.1726,
+   "removed_m3": 27.1726,
+   "removed_measured_baseline_m3": 25.176096,
+   "removed_analytic_m3": 25.1924,
+   "r450_faces_after_sewing": 132,
+   "bore_dia_mm": 900.0
+  },
+  "FOAM": {
+   "vol_m3": 1501.2256,
+   "solids": 113,
+   "valid": true,
+   "faces": 2924,
+   "cube_box_m3": 5832.0,
+   "frame_m3": 719.624,
+   "expected_m3": 990.318,
+   "pipe_shell_m3": 1234.868,
+   "bore_cyl_m3": 2887.19,
+   "intersect_frame_m3": 0.0,
+   "bores_clear": "61/61",
+   "worst_bore_intrusion_m3": 0.0
+  }
+ },
+ "checks": [
+  {
+   "name": "61 pipe solids collected",
+   "result": "PASS",
+   "detail": "61"
+  },
+  {
+   "name": "solid pyramid spans Z [9000, 18000] and 18000 plan",
+   "result": "PASS",
+   "detail": "dim=[18000.0, 18000.0, 9000.0] Z=[9000.0, 18000.0]"
+  },
+  {
+   "name": "pyramid shell is valid",
+   "result": "PASS",
+   "detail": "True"
+  },
+  {
+   "name": "132 hole positions",
+   "result": "PASS",
+   "detail": "132"
+  },
+  {
+   "name": "R6 layout 1/1/2/3/5/8/13 on all 4 slopes",
+   "result": "PASS",
+   "detail": "row1=1x4 row2=1x4 row3=2x4 row4=3x4 row5=5x4 row6=8x4 row7=13x4"
+  },
+  {
+   "name": "no hole sits above the apex z=18000",
+   "result": "PASS",
+   "detail": "max hole z = 16687, margin 1313 mm"
+  },
+  {
+   "name": "R6 total = 132",
+   "result": "PASS",
+   "detail": "132"
+  },
+  {
+   "name": "bottom row 13 holes fits with distributed gaps",
+   "result": "PASS",
+   "detail": "13 holes at t=0.12, gap 295.71 mm"
+  },
+  {
+   "name": "every row gap > 0 (tangent pitch breaks the boolean)",
+   "result": "PASS",
+   "detail": "min gap 295.71 mm"
+  },
+  {
+   "name": "captain gap formula (18000-13000)/14 at t=0",
+   "result": "FAIL",
+   "detail": "g = 450.0 mm ; 13*1000 + 14*g = 19300.0"
+  },
+  {
+   "name": "holes removed material",
+   "result": "PASS",
+   "detail": "131.093 -> 103.921 m3"
+  },
+  {
+   "name": "pyramid still valid after cutting",
+   "result": "PASS",
+   "detail": "True"
+  },
+  {
+   "name": "132 bores removed the rescaled baseline volume",
+   "result": "FAIL",
+   "detail": "27.1726 vs 25.176096 m3 (+7.93%)"
+  },
+  {
+   "name": "all 132 bores cut, not just half",
+   "result": "PASS",
+   "detail": "measured 27.173 m3 ; half-bore case would be ~12.588 m3"
+  },
+  {
+   "name": "exactly 132 R=450 bore faces exist (D900; half would mean holes missed)",
+   "result": "PASS",
+   "detail": "132 R=450 faces (D900)"
+  },
+  {
+   "name": "foam is valid and fills the cavity (multi-block is correct)",
+   "result": "PASS",
+   "detail": "valid=True solids=113 vol=1501.23 m3"
+  },
+  {
+   "name": "foam volume matches cube-minus-frame-minus-pipes-minus-bores",
+   "result": "FAIL",
+   "detail": "expected 990.32 got 1501.23 m3 (+51.59%)"
+  },
+  {
+   "name": "foam does not intrude into the truss frame / top-bottom plates",
+   "result": "PASS",
+   "detail": "foam n frame = 0.0 m3 (must be ~0)"
+  },
+  {
+   "name": "all pipe bores stay clear of foam (intersection = 0)",
+   "result": "PASS",
+   "detail": "61/61 clear, worst intrusion 0.0 m3"
+  }
+ ],
+ "outputs": {
+  "fcstd": "D:/SinoSir/SinoPORT/20261017/output/FCStd\\BW_WAVE61_SQR_PYRAMID_R6.FCStd",
+  "step": "D:/SinoSir/SinoPORT/20261017/output/FCStd\\BW_WAVE61_SQR_PYRAMID_R6.step"
+ },
+ "stats": {
+  "pass": 16,
+  "fail": 3
+ }
+}
