@@ -1,0 +1,253 @@
+{
+ "date": "2026-10-18",
+ "revision": "r2",
+ "captain_ruling_verbatim": "展示悬浮港岸边固定的景观的货运平台（岸边没有结冰时与直径大路相连，同时一侧是陆地，港口侧是海水；冬天周围结冰时与冬季大道连接、）、城市、寺庙、教堂、公路、铁路",
+ "source": "V6.3 §4.13 / §4.13.1 / §4.14 / §4.14.3 / §4.26",
+ "axes": {
+  "port_side": "+Y 海水（半圆开口朝 +Y，弦线 R=1650）",
+  "land_side": "-Y 陆地",
+  "note": "负 X = 左，正 X = 右（V5.7 全域命名）"
+ },
+ "hub": {
+  "size_m": 300.0,
+  "height_m": 6.0,
+  "modules": 110,
+  "left": [
+   -1950.0,
+   0.0
+  ],
+  "right": [
+   1950.0,
+   0.0
+  ],
+  "functions": [
+   "铁路编组",
+   "公路货场",
+   "仓库",
+   "龙门吊"
+  ],
+  "redlines": [
+   "左右规格统一",
+   "±1,950 不得改动",
+   "不得只建一侧"
+  ]
+ },
+ "road_d": {
+  "length_m": 3900.0,
+  "width_m": 108.0
+ },
+ "winter_road": {
+  "each_length_m": 3000.0,
+  "width_m": 54.0,
+  "modules_each": 200,
+  "y_from": 0.0,
+  "y_to": -3000.0,
+  "ice_m": 1500.0,
+  "sea_wave_m": 3.0
+ },
+ "state_a_nonwinter": {
+  "state": "A",
+  "season": "非冬天（岸边未结冰）",
+  "connect_to": "直径大路 ROAD-D（3,900 m 两端）",
+  "hub_left_x_m": -1950.0,
+  "hub_right_x_m": 1950.0,
+  "ice": false,
+  "land_side": "-Y 陆地",
+  "sea_side": "+Y 海水（港侧）"
+ },
+ "state_b_winter": {
+  "state": "B",
+  "season": "冬天（岸边结冰）",
+  "connect_to": "冬季大道 ROAD-Winter-Left/Right（各 3,000 m）",
+  "hub_left_x_m": -1950.0,
+  "hub_right_x_m": 1950.0,
+  "ice": true,
+  "ice_band_m": 1500.0,
+  "ice_band_y": [
+   -1500.0,
+   0.0
+  ],
+  "sea_band_m": 1500.0,
+  "sea_band_y": [
+   -3000.0,
+   -1500.0
+  ],
+  "sea_wave_m": 3.0,
+  "land_side": "-Y 陆地（结冰）",
+  "sea_side": "+Y 海水（港侧，不冻）"
+ },
+ "scenery": {
+  "city": {
+   "code": "LAND-CITY-MOD",
+   "cn": "岸边城市",
+   "unit_m": 200.0,
+   "units": 5,
+   "bldg_h_min": 20.0,
+   "bldg_h_max": 60.0,
+   "style": "海边城市",
+   "material": "混凝土 + 玻璃 + 雪顶"
+  },
+  "church": {
+   "code": "LAND-CHURCH",
+   "cn": "教堂",
+   "size_m": [
+    30.0,
+    20.0,
+    40.0
+   ],
+   "count": 1,
+   "tower_h_m": 40.0,
+   "top": "金十字"
+  },
+  "temple": {
+   "code": "LAND-TEMPLE",
+   "cn": "寺庙",
+   "size_m": [
+    40.0,
+    40.0,
+    25.0
+   ],
+   "count": 1,
+   "style": "中国沿海",
+   "roof": "重檐起翘"
+  },
+  "coastal_hwy": {
+   "code": "HWY-COASTAL",
+   "cn": "海岸高速",
+   "length_m": 5000.0,
+   "width_m": 56.0,
+   "lanes": 8,
+   "lane_w_m": 7.0,
+   "light_every_m": 50.0,
+   "surface": "沥青"
+  },
+  "coastal_rail": {
+   "code": "RAIL-COASTAL",
+   "cn": "海岸铁路",
+   "length_m": 5000.0,
+   "width_m": 10.0,
+   "tracks": 4,
+   "track_gap_m": 5.0,
+   "gauge_m": 1.435,
+   "signal_every_m": 500.0,
+   "note": "与高速并行"
+  }
+ },
+ "checks": [
+  {
+   "check": "1 货运平台 300 x 300 x 6 m（左右统一）",
+   "pass": true,
+   "detail": "300 x 300 x 6 m"
+  },
+  {
+   "check": "2 110 模块/平台",
+   "pass": true,
+   "detail": "110 模块"
+  },
+  {
+   "check": "3 HUB-LEFT 中心 (−1,950, 0)（红线）",
+   "pass": true,
+   "detail": "(-1950, 0)"
+  },
+  {
+   "check": "4 HUB-RIGHT 中心 (+1,950, 0)（红线）",
+   "pass": true,
+   "detail": "(1950, 0)"
+  },
+  {
+   "check": "5 左右规格对称（不得只建一侧）",
+   "pass": true,
+   "detail": "左右同规格，中心 X 互为相反数"
+  },
+  {
+   "check": "6 直径大路 3,900 m，宽 108 m",
+   "pass": true,
+   "detail": "3900 m x 108 m"
+  },
+  {
+   "check": "7 HUB 位于直径大路两端",
+   "pass": true,
+   "detail": "|HUB| 1950 = ROAD_D/2 1950"
+  },
+  {
+   "check": "8 冬季大道各 3,000 m，宽 54 m（红线）",
+   "pass": true,
+   "detail": "3000 m x 54 m x 2 条"
+  },
+  {
+   "check": "9 冬季大道 200 模块/条，合计 400",
+   "pass": true,
+   "detail": "200 x 2 = 400 模块"
+  },
+  {
+   "check": "10 冬季大道起于 HUB，向陆地侧 −Y 延伸",
+   "pass": true,
+   "detail": "y 0 -> -3000（−Y 向陆）"
+  },
+  {
+   "check": "11 冰段 1,500 + 海段 1,500 = 3,000 m",
+   "pass": true,
+   "detail": "结冰 1500 + 海水 1500 = 3000 m"
+  },
+  {
+   "check": "12 连接段浪高 3 m",
+   "pass": true,
+   "detail": "3 m"
+  },
+  {
+   "check": "13 陆海方位：港口侧 +Y 海水 / 陆地侧 −Y",
+   "pass": true,
+   "detail": "半圆开口朝 +Y（港口），冬季大道向 −Y（陆地）"
+  },
+  {
+   "check": "14 岸边城市 200x200 m x 5 个，高 20–60 m",
+   "pass": true,
+   "detail": "5 x 200 m，20–60 m"
+  },
+  {
+   "check": "15 教堂 30x20x40 m，1 个，塔高 40 m",
+   "pass": true,
+   "detail": "1 座，塔 40 m"
+  },
+  {
+   "check": "16 寺庙 40x40x25 m，1 个，重檐起翘",
+   "pass": true,
+   "detail": "1 座，重檐"
+  },
+  {
+   "check": "17 海岸高速 5,000 m x 56 m，8 车道（单宽 7 m）",
+   "pass": true,
+   "detail": "8 x 7 = 56 m"
+  },
+  {
+   "check": "18 海岸铁路 5,000 m x 10 m，4 线，轨距 1.435 m",
+   "pass": true,
+   "detail": "4 线，轨距 1.435 m"
+  },
+  {
+   "check": "19 铁路与高速并行（等长 5,000 m）",
+   "pass": true,
+   "detail": "两者均 5000 m"
+  },
+  {
+   "check": "20 状态 A：连直径大路、未结冰",
+   "pass": true,
+   "detail": "直径大路 ROAD-D（3,900 m 两端），非冬天（岸边未结冰）"
+  },
+  {
+   "check": "21 状态 B：连冬季大道、结冰",
+   "pass": true,
+   "detail": "冬季大道 ROAD-Winter-Left/Right（各 3,000 m），冬天（岸边结冰）"
+  },
+  {
+   "check": "22 状态 B 冰段在近岸（y ∈ [−1500, 0]）",
+   "pass": true,
+   "detail": "冰段 y ∈ [-1500, 0]（紧邻岸线）；海水段 y ∈ [-3000, -1500]"
+  },
+  {
+   "check": "23 两状态共用同一对 HUB 坐标",
+   "pass": true,
+   "detail": "平台位置固定，变的只是连接对象与结冰状态"
+  }
+ ]
+}
