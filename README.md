@@ -12,6 +12,11 @@
 
 </div>
 
+> **📦 站内直下（无需跳转，国内网络更快）**
+> · [⬇ 108 秒完整版 MP4（17.3 MB）](https://gitee.com/sinoshop/sinoshop-os/releases/download/v1.0/SINOPORT_%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_108s_%E5%AE%8C%E6%95%B4%E7%89%88_1920x1080.mp4)
+> · [⬇ 30 秒精华版 MP4（5.3 MB）](https://gitee.com/sinoshop/sinoshop-os/releases/download/v1.0/SINOPORT_%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_30s_%E7%B2%BE%E5%8D%8E%E7%89%88_%E6%A8%AA%E5%B1%8F.mp4)
+> · [Release 页面 · 全部附件](https://gitee.com/sinoshop/sinoshop-os/releases)
+>
 > **核心旗舰项目**：SINOPORT 悬浮港可移动抗台风生态花园社区
 >
 > **⚓ 无桩基超级刚体** · 8 根张力索按八卦方位布置，拉结成超级刚体
