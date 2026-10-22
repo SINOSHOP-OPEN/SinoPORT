@@ -31,7 +31,7 @@ MOD_W = 27.0              # m  模块边长 Y
 MOD_H = 8.0               # m  MOD-STD 模块高（MOD-DM 为 6 m）
 TENON_DIA = 0.300         # m  12 直通榫卯柱 圆形中空 φ300
 TENON_N = 12# 数量
-PIPE_DIA = 2.0            # m  压载水舱三管束 φ2000（V6.0）
+PIPE_DIA = 2.0            # m  压载舱体三管束 φ2000（V6.0）
 PIPE_N = 3                # 发电导流 / 通水 / 密封浮力
 OLD_FISHWAY_DIA = 2.0     # m  被淘汰的外挂独立鱼道 φ2000
 
@@ -83,7 +83,7 @@ def main():
     a_new = a_tenon + a_pipe
     print("  承重预留孔洞    %d x φ%.0f mm = %.4f m2" % (
         TENON_N, TENON_DIA * 1000, a_tenon))
-    print("  压载水舱三管束  %d x φ%.0f mm     = %.4f m2" % (
+    print("  压载舱体三管束  %d x φ%.0f mm     = %.4f m2" % (
         PIPE_N, PIPE_DIA * 1000, a_pipe))
     print("  合计贯通面积                       = %.4f m2" % a_new)
     print("  占额外空间      否（寄生于既有承重构件）")
