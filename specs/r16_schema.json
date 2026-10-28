@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SINOSHOP R16 Encoded Component (V4.0.1)",
+  "description": "JSON Schema for SINOR Encoded Component, aligned with Protobuf definition V4.0.1.",
+  "type": "object",
+  "required": ["org", "seg", "zon", "com", "att", "chk", "full_encoding"],
+  "properties": {
+    "org": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{3,8}$",
+      "description": "ORG field: Organization code, 3-8 uppercase alphanumeric characters."
+    },
+    "seg": {
+      "type": "string",
+      "pattern": "^SFT-\\d{2,4}$",
+      "description": "SEG field: Segment code, e.g. 'SFT-01'."
+    },
+    "zon": {
+      "type": "string",
+      "enum": ["AFMB", "FLEX", "THRS", "SENS", "BDMP", "ENER", "ECOL"],
+      "description": "ZON field: Component role."
+    },
+    "com": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{4}$",
+      "description": "COM field: Component attributes encoded string."
+    },
+    "att": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{4}$",
+      "description": "ATT field: Status and financial attributes."
+    },
+    "chk": {
+      "type": "string",
+      "pattern": "^[0-9A-F]{2}$",
+      "description": "CHK field: 2-digit hex checksum."
+    },
+    "full_encoding": {
+      "type": "string",
+      "description": "Full 32-character R16 encoding string."
+    },
+    "firmware_version": {
+      "type": "string",
+      "description": "Firmware signature version."
+    },
+    "integrity_hash": {
+      "type": "string",
+      "description": "Base64 encoded integrity hash."
+    },
+    "ext_attributes": {
+      "type": "object",
+      "description": "Optional extended attributes."
+    }
+  }
+}

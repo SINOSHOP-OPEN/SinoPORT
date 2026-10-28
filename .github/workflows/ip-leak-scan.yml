@@ -1,0 +1,78 @@
+name: IP Leak Scan
+
+on:
+  pull_request:
+    branches:
+      - main
+      - 3.0.x
+  workflow_dispatch:
+
+jobs:
+  scan-sensitive-keywords:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史以比较 diff
+
+      - name: 扫描敏感关键词
+        run: |
+          # 定义受保护的关键词列表（L3 核心资产）
+          SENSITIVE_PATTERNS=(
+            "BDMP_PRIVATE_KEY"
+            "bdmp_private_key"
+            "BDMP 私钥"
+            "虎符令牌生成逻辑"
+            "tiger_token_generation"
+            "RWA 资产确权逻辑"
+            "rwa_asset_confirmation"
+            "core_algorithm_confidential"
+            "L3-CONFIDENTIAL"
+            "动态权重算法"
+            "dynamic_weight_algorithm"
+            "权重系数"
+            "weight_coefficient"
+            "ZON_WEIGHT"
+            "zon_weight"
+            "ATT_FINANCIAL_MODEL"
+            "att_financial_model"
+            "虎符激活"
+            "tiger_activation"
+          )
+
+          # 获取 PR 的变更文件列表
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin ${{ github.base_ref }} --depth=1
+            FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          else
+            # 手动触发时扫描所有文件
+            FILES=$(find . -type f)
+          fi
+
+          echo "扫描以下文件："
+          echo "$FILES"
+
+          FAILED=0
+          for FILE in $FILES; do
+            # 跳过非文本文件
+            if file "$FILE" | grep -q "binary"; then
+              continue
+            fi
+            for PATTERN in "${SENSITIVE_PATTERNS[@]}"; do
+              if grep -Hn "$PATTERN" "$FILE" 2>/dev/null; then
+                echo "❌ 检测到敏感关键词 '$PATTERN' 在文件 $FILE 中！"
+                FAILED=1
+              fi
+            done
+          done
+
+          if [ $FAILED -eq 1 ]; then
+            echo "------------------------------------------------"
+            echo "⛔ 安全扫描失败：发现敏感关键词泄露。"
+            echo "   请将受保护的核心资产移至 SINOSHOP-Core 私有仓库。"
+            echo "------------------------------------------------"
+            exit 1
+          else
+            echo "✅ 安全扫描通过，未发现敏感关键词。"
+          fi

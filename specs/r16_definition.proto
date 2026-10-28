@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+package sinoshop.r16;
+
+// SINOSHOP R16 编码体系 - 核心定义 (V4.0.1)
+// 本文件是 SINOSHOP 开源生态的唯一协议标准，所有实现必须与此兼容。
+// 对应纲要：SINOSHOP-R16-V4.0.1
+
+// 全局唯一构件编码（对应 32 位编码结构）
+message SinorEncodedComponent {
+  string org = 1;                  // 机构标识 (ORG)，3-8 位大写字母数字
+  string seg = 2;                  // 节段编码 (SEG)，如 "SFT-01"
+  string zon = 3;                  // 结构分区 (ZON)，4 位大写字母
+  string com = 4;                  // 构件属性 (COM)，4 位字母数字
+  string att = 5;                  // 状态/金融属性 (ATT)，4 位字母数字
+  string chk = 6;                  // 校验位 (CHK)，2 位十六进制
+  string full_encoding = 7;        // 完整 32 位编码字符串
+  string firmware_version = 8;     // 固件签名版本
+  bytes integrity_hash = 9;        // 完整性哈希
+  string ext_attributes = 10;      // 扩展属性 (JSON)
+}
+
+// 构件角色枚举（对应 ZON 字段）
+enum ComponentRole {
+  UNSPECIFIED = 0;
+  AFMB = 1;          // 自浮式模块主体
+  FLEX = 2;          // 柔性约束节点
+  THRS = 3;          // 智能推力单元
+  SENS = 4;          // 位姿感知节点
+  BDMP = 5;          // 边界阻尼区
+  ENER = 6;          // 能源枢纽站
+  ECOL = 7;          // 生态模块
+}
+
+// R16 握手请求
+message HandshakeRequest {
+  SinorEncodedComponent client_component = 1;
+  string protocol_version = 2;     // 协议版本，如 "4.0.1"
+}
+
+// R16 握手响应
+message HandshakeResponse {
+  string server_component_id = 1;
+  string protocol_version = 2;
+  HandshakeStatus status = 3;
+  string error_message = 4;
+  string upgrade_guide_url = 5;
+}
+
+enum HandshakeStatus {
+  ACCEPTED = 0;
+  REJECTED_VERSION_EOL = 1;
+  REJECTED_FIRMWARE_MISMATCH = 2;
+  REJECTED_UNAUTHORIZED = 3;
+  REJECTED_INVALID_ENCODING = 4;   // 新增：编码格式校验失败
+  REJECTED_OTHER = 5;
+}
+
+// R16 遥测数据包
+message TelemetryPacket {
+  SinorEncodedComponent component = 1;
+  uint64 timestamp = 2;
+  repeated Metric metrics = 3;
+  string digital_signature = 4;
+}
+
+message Metric {
+  string name = 1;
+  double value = 2;
+  string unit = 3;
+  uint64 timestamp = 4;
+}

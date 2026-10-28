@@ -1,0 +1,12 @@
+{
+  "sinoshop_versions": {
+    "active": {
+      "version": "0.3.x",
+      "protocol_version": 1,
+      "upgrade_guide": "https://github.com/SinoSir/SINOSHOP/releases"
+    },
+    "maintenance": [],
+    "eol": [],
+    "_note": "SINOSHOP is in early development (0.3). Maintenance and EOL tiers will be populated upon first stable release."
+  }
+}

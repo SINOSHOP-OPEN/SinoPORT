@@ -1,0 +1,21 @@
+name: 版本治理合规检查
+
+on:
+  pull_request:
+    branches:
+      - main
+      - 0.3.x
+  workflow_dispatch:
+
+jobs:
+  version-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 运行版本策略校验
+        run: python3 scripts/ci/validate_version.py
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+Finalize version policy workflow

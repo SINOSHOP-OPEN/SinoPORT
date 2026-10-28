@@ -1,0 +1,56 @@
+# SINOSHOP 信任网关 · 自动回复规则引擎
+# 当 Issue/Discussion 触发关键词时，自动匹配并建议回应
+
+version: "1.0"
+protocol: "R16-SDK"
+
+rules:
+  - id: PHIL-001
+    triggers:
+      - "观天之道"
+      - "执天之行"
+      - "哲学包装"
+      - "降维协同"
+      - "神圣化"
+      - "PUA"
+      - "道德高帽"
+    response: responses/philosophy.md
+    priority: high
+    auto_comment: true
+
+  - id: LEGAL-001
+    triggers:
+      - "知识产权"
+      - "CLA"
+      - "白嫖"
+      - "免费使用"
+      - "版权归属"
+      - "代码被拿走"
+      - "贡献者协议"
+    response: responses/intellectual-property.md
+    priority: high
+    auto_comment: true
+
+  - id: BIZ-001
+    triggers:
+      - "商业闭环"
+      - "收割"
+      - "垄断"
+      - "RWA 资产证券化"
+      - "现金流"
+      - "DePIN"
+      - "赚钱"
+    response: responses/business-model.md
+    priority: high
+    auto_comment: true
+
+  - id: GOV-001
+    triggers:
+      - "独裁"
+      - "ROOT: LIANG ZHENXIONG"
+      - "一言堂"
+      - "中心化"
+      - "仲裁委员会"
+    response: responses/governance.md
+    priority: high
+    auto_comment: true
