@@ -29,8 +29,6 @@
 
 ---
 
-**常设源 · 唯一取稿处** —— [📜 资料库常设文档](https://www.workbuddy.cn/space/d/eQlSjtzclwEpIK7HkKAPSR) ｜ [🌊 一页门面（已发布 · 可直接分享）](https://workbuddy.link/p/TQIMMap925HGtHdjBnyzJs)
-
 > 官网、仓库、资料库三处同源 —— 一处修订，三处同步。纲领文本以资料库常设文档为准。
 <!-- CREED:END -->
 
