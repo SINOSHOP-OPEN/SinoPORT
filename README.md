@@ -1,5 +1,6 @@
 <div align="center">
 
+<!-- CREED:START -->
 <!-- ◆ 20261029 核心纲领置顶 -->
 
 ## 🌊 SINOSHOP · 海洋文明核心纲领
@@ -8,25 +9,30 @@
 
 ---
 
-**【核心纲领 · Core Principle】**
+**【核心纲领 Core Principle】**
 
 ### 观天之道，执天之行，三盗既宜，三才既安。
 
 *Observe Nature's Order, Align with Ocean's Rhythm. When the Three Harmonies Are Balanced, the Three Realms Rest Secure.*
 
-**【工程哲学 · Industrial Philosophy】**
+**【工程哲学 Industrial Philosophy】**
 
 ### 海生电、电养船、船搭桥、桥造城、城惠民。航天海，众生安。
 
 *Ocean Generates Power, Power Sustains Ships, Ships erect Bridges, Bridges Build Cities, Cities bless the People, Space-Ocean Synergy, All dwell in security.*
 
-**【精神信念 · Spiritual Belief】**
+**【精神信念 Spiritual Belief】**
 
 ### 贞忠昭日月，惠民播春秋。
 
 *Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
 
 ---
+
+**常设源 · 唯一取稿处** —— [📜 资料库常设文档](https://www.workbuddy.cn/space/d/eQlSjtzclwEpIK7HkKAPSR) ｜ [🌊 一页门面（已发布 · 可直接分享）](https://workbuddy.link/p/TQIMMap925HGtHdjBnyzJs)
+
+> 官网、仓库、资料库三处同源 —— 一处修订，三处同步。纲领文本以资料库常设文档为准。
+<!-- CREED:END -->
 
 </div>
 
