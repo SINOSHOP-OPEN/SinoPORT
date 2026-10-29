@@ -1,0 +1,19 @@
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node
+node_modules/
+npm-debug.log*
+
+# 运行产物
+verify_result.json
+
+# 编辑器与系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*~
