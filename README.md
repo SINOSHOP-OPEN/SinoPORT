@@ -1,5 +1,37 @@
 <div align="center">
 
+<!-- ◆ 20261029 核心纲领置顶 -->
+
+## 🌊 SINOSHOP · 海洋文明核心纲领
+
+**CORE PRINCIPLE OF OCEAN CIVILISATION**
+
+---
+
+**【核心纲领 · Core Principle】**
+
+### 观天之道，执天之行，三盗既宜，三才既安。
+
+*Observe Nature's Order, Align with Ocean's Rhythm. When the Three Harmonies Are Balanced, the Three Realms Rest Secure.*
+
+**【工程哲学 · Industrial Philosophy】**
+
+### 海生电、电养船、船搭桥、桥造城、城惠民。航天海，众生安。
+
+*Ocean Generates Power, Power Sustains Ships, Ships erect Bridges, Bridges Build Cities, Cities bless the People, Space-Ocean Synergy, All dwell in security.*
+
+**【精神信念 · Spiritual Belief】**
+
+### 贞忠昭日月，惠民播春秋。
+
+*Steadfast Loyalty glowing like the sun and moon; Benevolence nourishing the tide of time.*
+
+---
+
+</div>
+
+<div align="center">
+
 # SinoPORT —— 共建共享，海洋家园，众志成城。
 
 ### A · 宣传页 · Vision
@@ -14,7 +46,7 @@
 
 SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三者合一。
 
-**108 秒技术展示片** —— [showcase/SINOPORT_Tech_Showcase_108s.mp4](showcase/SINOPORT_Tech_Showcase_108s.mp4)
+**108 秒技术展示片** —— [▶ 在线播放（GitHub Pages · 点开即看 · 无需下载）](https://sinoshop-open.github.io/webpage/#film)　｜　[⬇ 下载 MP4](showcase/SINOPORT_Tech_Showcase_108s.mp4)
 
 **[🌐 访问项目官网展示页 (GitHub Pages)](https://sinoshop-open.github.io/webpage/)** ｜ **[🐙 GitHub 镜像仓库](https://github.com/SINOSHOP-OPEN/SinoPORT)** ｜ **[💻 Gitee 主仓库](https://gitee.com/sinoshop/SinoPORT)**
 
