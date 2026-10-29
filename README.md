@@ -84,7 +84,7 @@ We publish the data, not the logic: core control algorithms, structural design a
 
 **参与方式 · How to join**
 
-- 留言与讨论 —— 💻 [Gitee Issues](https://gitee.com/sinoshop/SinoPORT/issues) ｜ 🐙 [GitHub Issues](https://github.com/SINOSHOP-OPEN/SinoPORT/issues)
+- 留言与讨论 —— 💻 [Gitee 提 Issue](https://gitee.com/sinoshop/SinoPORT/issues/new) ｜ 🐙 [GitHub Issues](https://github.com/SINOSHOP-OPEN/SinoPORT/issues)
 - 提交改进 / 参与复现验证 —— 规则与数字存证机制见 [CONTRIBUTING.md](CONTRIBUTING.md)
 - 贡献即确权：合入与复现均获基于 SHA-256 的数字存证凭证
 
