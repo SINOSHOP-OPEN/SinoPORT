@@ -1,0 +1,41 @@
+{
+ "directive": "刚性压力卸载机制· 公开公开验证",
+ "budget": {
+  "budget_standby": 1.0,
+  "release": 0.6172839506,
+  "avail": 0.38271604940000004
+ },
+ "mechanics": {
+  "dz_closed": 0.0,
+  "f_top_closed": 1.0,
+  "f_top_open": 0.38271604940000004,
+  "residual_rel": 37.20238095238095
+ },
+ "pad": {
+  "pad_share": 0.9,
+  "play_share": 0.1,
+  "shear_sf": 8.2,
+  "static_bidir": 1.4
+ },
+ "efficiency": {
+  "eta_min": 0.97312
+ },
+ "precision": {
+  "ratio": 26.9018083993424,
+  "half_step_rel": 1.85,
+  "trim_rel": 0.0094
+ },
+ "failure": {
+  "extreme_over": 0.0494
+ },
+ "level": "LEVEL-0 机级筛选计算",
+ "boundaries": [
+  "本脚本为工程版 43/43 断言的等价公开重构：力学判据、鉴别力结构、失效边界全部保留，配置数值归一化",
+  "全部输出为相对指数/百分比/倍数/无量纲判据比值，不含任何几何尺寸、质量、容量、材料或压力数值",
+  "本模型不替代物理实测，不构成工程承诺",
+  "不得外推至未列出的载荷组合、浪级或支撑垫材料"
+ ],
+ "assertions_total": 66,
+ "assertions_passed": 66,
+ "assertions_failed": 0
+}

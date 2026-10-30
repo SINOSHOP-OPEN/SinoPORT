@@ -1,0 +1,5 @@
+tonnage_t,off_total_off_mm,off_quant_off_mm,off_load_off_mm,on_total_off_mm,on_uncomp_off_mm,on_floor_off_mm,on_lag_off_mm,on_drive_total_off_mm,units_allocated_t,gap_t,residual_ratio_pct,reduction_pct,meets_criterion
+50.0,66.9142,0.0,66.9142,0.004,0.0,0.004,0.0,4.0189,50.0,0.0,0.005978,99.994,是
+100.0,133.8285,0.0,133.8285,0.004,0.0,0.004,0.0,8.0337,100.0,0.0,0.002989,99.997,是
+200.0,267.657,0.0,267.657,0.004,0.0,0.004,0.0,16.0634,200.0,0.0,0.001494,99.9985,是
+500.0,669.1425,0.0,669.1425,0.004,0.0,0.004,0.0,40.1525,500.0,0.0,0.000598,99.9994,是

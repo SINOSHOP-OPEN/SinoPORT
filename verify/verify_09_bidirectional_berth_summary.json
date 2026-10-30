@@ -1,0 +1,674 @@
+{
+ "meta": {
+  "title": "开放规划图双侧泊位路基与不积压仿真",
+  "level": "LEVEL-0 机级筛选（离散事件仿真）",
+  "berths_source": "编码规范 V6.1-r2 §4.27.4（9 泊位 513 m）",
+  "qc_rate_source": "京唐港认证综合作业效率 42 move/h"
+ },
+ "berths": [
+  {
+   "name": "泊1",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": -1293.0
+  },
+  {
+   "name": "泊2",
+   "kind": "中",
+   "width_m": 54,
+   "length_m": 690,
+   "x_m": -1042.5
+  },
+  {
+   "name": "泊3",
+   "kind": "中",
+   "width_m": 54,
+   "length_m": 690,
+   "x_m": -778.5
+  },
+  {
+   "name": "泊4",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": -396.0
+  },
+  {
+   "name": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0
+  },
+  {
+   "name": "泊6",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 396.0
+  },
+  {
+   "name": "泊7",
+   "kind": "中",
+   "width_m": 54,
+   "length_m": 690,
+   "x_m": 778.5
+  },
+  {
+   "name": "泊8",
+   "kind": "中",
+   "width_m": 54,
+   "length_m": 690,
+   "x_m": 1042.5
+  },
+  {
+   "name": "泊9",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": 1293.0
+  }
+ ],
+ "params": {
+  "qc_rate_move_h": 42.0,
+  "qc_rate_opt_move_h": 48.0,
+  "igv_speed_mps": 4.6305555555555555,
+  "igv_pick_s": 10.0,
+  "igv_load_s": 12.0,
+  "road_lanes": 4,
+  "road_capacity_per_lane": 2,
+  "turn_zone_len_m": 60.0,
+  "box_slot_len_m": 12.0,
+  "no_ground_stacking": true
+ },
+ "cases": {
+  "泊5_基准": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 9,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 6,
+   "roadbed_occupancy_mean": 3.525,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 203.06538692261552,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 543.3100183057267,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_最优岸桥": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 10,
+   "qc_rate": 0.013333333333333334,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 7,
+   "roadbed_occupancy_mean": 3.95,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 203.06538692261552,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 491.3456511404866,
+   "e2e_max_s": 1500.0273675207977,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_全直装": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 9,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 1.0,
+   "roadbed_occupancy_max": 0,
+   "roadbed_occupancy_mean": 0.0,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 0.0,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 128.2144160358133,
+   "e2e_max_s": 171.3972942619464,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 239,
+   "boxes_done": 240
+  },
+  "泊5_零直装": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 9,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.0,
+   "roadbed_occupancy_max": 24,
+   "roadbed_occupancy_mean": 15.1,
+   "qc_wait_events": 100,
+   "igv_wait_max_s": 3249.2547776159045,
+   "buffer_wait_max_s": 5.258016244624741e-13,
+   "e2e_mean_s": 670.3904914531948,
+   "e2e_max_s": 3519.3025966235314,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 0,
+   "boxes_done": 140
+  },
+  "泊5_IGV3台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 3,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 50,
+   "roadbed_occupancy_mean": 30.183333333333334,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 12016.48564801977,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 2161.080669019014,
+   "e2e_max_s": 12268.393095101781,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_IGV4台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 4,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 27,
+   "roadbed_occupancy_mean": 19.183333333333334,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 7866.68591995886,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 1266.7780957101638,
+   "e2e_max_s": 8110.818921929895,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_IGV5台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 5,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 16,
+   "roadbed_occupancy_mean": 8.283333333333333,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 1936.6136795563157,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 749.5691521130864,
+   "e2e_max_s": 2170.3807547127135,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_IGV6台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 6,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 8,
+   "roadbed_occupancy_mean": 4.125,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 412.1312046227308,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 565.729381690518,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_IGV7台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 7,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 6,
+   "roadbed_occupancy_mean": 3.558333333333333,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 284.7615928308039,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 544.3874907065932,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊5_IGV8台": {
+   "berth": "泊5",
+   "kind": "大",
+   "width_m": 81,
+   "length_m": 900,
+   "x_m": 0.0,
+   "buffer_slots": 70,
+   "igv_count": 8,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 6,
+   "roadbed_occupancy_mean": 3.525,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 203.06538692261552,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 543.3148719873984,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 240
+  },
+  "泊3_基准": {
+   "berth": "泊3",
+   "kind": "中",
+   "width_m": 54,
+   "length_m": 690,
+   "x_m": -778.5,
+   "buffer_slots": 52,
+   "igv_count": 8,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 6,
+   "roadbed_occupancy_mean": 2.6538461538461537,
+   "qc_wait_events": 16,
+   "igv_wait_max_s": 156.41871625674867,
+   "buffer_wait_max_s": 5.258016244624741e-13,
+   "e2e_mean_s": 524.0983500492322,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 224
+  },
+  "泊1_基准": {
+   "berth": "泊1",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": -1293.0,
+   "buffer_slots": 7,
+   "igv_count": 4,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 3,
+   "roadbed_occupancy_mean": 1.1428571428571428,
+   "qc_wait_events": 106,
+   "igv_wait_max_s": 39.8020395920816,
+   "buffer_wait_max_s": 5.258016244624741e-13,
+   "e2e_mean_s": 683.6615172911809,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 134
+  },
+  "泊1_直装80%": {
+   "berth": "泊1",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": -1293.0,
+   "buffer_slots": 7,
+   "igv_count": 4,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.8,
+   "roadbed_occupancy_max": 2,
+   "roadbed_occupancy_mean": 0.42857142857142855,
+   "qc_wait_events": 34,
+   "igv_wait_max_s": 39.8020395920816,
+   "buffer_wait_max_s": 5.258016244624741e-13,
+   "e2e_mean_s": 307.81804955510574,
+   "e2e_max_s": 600.0312771666258,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 187,
+   "boxes_done": 206
+  },
+  "泊1_直装80%+溢出20位": {
+   "berth": "泊1",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": -1293.0,
+   "buffer_slots": 27,
+   "igv_count": 4,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.8,
+   "roadbed_occupancy_max": 2,
+   "roadbed_occupancy_mean": 0.7916666666666666,
+   "qc_wait_events": 0,
+   "igv_wait_max_s": 91.63167366526693,
+   "buffer_wait_max_s": 0.0,
+   "e2e_mean_s": 297.6103882699378,
+   "e2e_max_s": 600.0312771666258,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 187,
+   "boxes_done": 240
+  },
+  "泊1_溢出40位": {
+   "berth": "泊1",
+   "kind": "小",
+   "width_m": 27,
+   "length_m": 150,
+   "x_m": -1293.0,
+   "buffer_slots": 47,
+   "igv_count": 4,
+   "qc_rate": 0.011666666666666667,
+   "direct_ratio": 0.5,
+   "roadbed_occupancy_max": 6,
+   "roadbed_occupancy_mean": 3.1595744680851063,
+   "qc_wait_events": 26,
+   "igv_wait_max_s": 373.6535287293384,
+   "buffer_wait_max_s": 5.258016244624741e-13,
+   "e2e_mean_s": 555.0695610790771,
+   "e2e_max_s": 1714.3169914523323,
+   "n_left": 120,
+   "n_right": 120,
+   "side_imbalance": 0.0,
+   "direct_pairs": 109,
+   "boxes_done": 214
+  }
+ },
+ "assertions": {
+  "passed": 51,
+  "failed": 0,
+  "lines": [
+   {
+    "status": "PASS",
+    "msg": "泊5_基准：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_最优岸桥：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_全直装：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_零直装：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV3台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV4台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV5台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV6台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV7台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV8台：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊3_基准：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_基准：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%+溢出20位：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_溢出40位：双侧均有箱完成（左 120 / 右 120）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_基准：路基占用率峰值 8.6% ≤ 85%（缓冲 70 位 / 实占 6）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_最优岸桥：路基占用率峰值 10.0% ≤ 85%（缓冲 70 位 / 实占 7）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_全直装：路基占用率峰值 0.0% ≤ 85%（缓冲 70 位 / 实占 0）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊3_基准：路基占用率峰值 11.5% ≤ 85%（缓冲 52 位 / 实占 6）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_基准：路基占用率峰值 42.9% ≤ 85%（缓冲 7 位 / 实占 3）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%：路基占用率峰值 28.6% ≤ 85%（缓冲 7 位 / 实占 2）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%+溢出20位：路基占用率峰值 7.4% ≤ 85%（缓冲 27 位 / 实占 2）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_溢出40位：路基占用率峰值 12.8% ≤ 85%（缓冲 47 位 / 实占 6）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_基准：大船泊位路基阻塞 0 次（目标 0 —— 岸桥全程不停等）"
+   },
+   {
+    "status": "PASS",
+    "msg": "★失效边界可复现：泊5_IGV3台（IGV 仅 3 台）IGV 等待达 12016 s（> 180 s）⇒ 运力不足时必然积压，判据具备鉴别力"
+   },
+   {
+    "status": "PASS",
+    "msg": "★运力不足时占用率显著抬升：泊5_IGV3台（IGV 3 台）占用峰值 71.4%（> 30%）"
+   },
+   {
+    "status": "PASS",
+    "msg": "全直装时路基占用峰值为 0 个箱位（箱完全不进入运输系统）"
+   },
+   {
+    "status": "PASS",
+    "msg": "对冲直装有效：全直装端到端 128 s < 零直装 670 s"
+   },
+   {
+    "status": "PASS",
+    "msg": "零直装时出现路基阻塞 100 次（诚实记录失效边界）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_基准：端到端平均周转 543 s ≤ 900 s（15 min）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊3_基准：端到端平均周转 524 s ≤ 900 s（15 min）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_基准：端到端平均周转 684 s ≤ 900 s（15 min）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_基准：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_最优岸桥：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_全直装：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_零直装：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV3台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV4台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV5台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV6台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV7台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5_IGV8台：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊3_基准：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_基准：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_直装80%+溢出20位：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1_溢出40位：双侧箱量失衡度 0.0% ≤ 15%（载荷守恒前提）"
+   },
+   {
+    "status": "PASS",
+    "msg": "★★短板如实识别：泊1（路基 150 m / 7 个单层箱位）基准阻塞 106 次 ⇒ 小船泊位须配「浮箱溢出区 + 直装优先」对策"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1 对策有效：直装 80% + 溢出 20 位 → 阻塞 0 次 ≤ 基准 106 次"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊1 对策有效：溢出 40 位后路基占用率峰值 12.8% ≤ 85%"
+   },
+   {
+    "status": "PASS",
+    "msg": "泊5 基准：IGV 运力 0.0336 箱/s > 双侧放箱需求 0.0233 箱/s（余量 44%）"
+   }
+  ]
+ },
+ "assumptions": [
+  {
+   "id": "P-1",
+   "item": "泊位路基单层不落地堆存，缓冲位数 = (路基长 − 端部作业区) / 箱位长",
+   "note": "浮式路基承载受限；对应 §7.2 单层快离约束"
+  },
+  {
+   "id": "P-2",
+   "item": "岸桥取箱耗时 = 1/节拍；落箱后持续占用路基箱位",
+   "note": "IGV 取走时才释放箱位"
+  },
+  {
+   "id": "P-3",
+   "item": "IGV 完整循环 = 取箱 + 重载行程 + 落箱 + 空驶回程",
+   "note": "行程按 (路基长/2 + 120 m) 计"
+  },
+  {
+   "id": "P-4",
+   "item": "对冲直装箱在路基就地交接，不占存箱位、不经 IGV 与道路",
+   "note": "这是「不积压」的根本机制"
+  },
+  {
+   "id": "P-5",
+   "item": "道路在途车上限 = 车道数 × 每车道容量",
+   "note": "108 m 宽路基上的有效作业车道取 4（双向各 2）"
+  },
+  {
+   "id": "P-6",
+   "item": "直装比例是可调度参数，由 TOS 按航次目的港匹配度在线调节",
+   "note": "提高它比增加 IGV 更有效"
+  }
+ ]
+}
