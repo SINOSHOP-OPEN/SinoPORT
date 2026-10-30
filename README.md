@@ -50,6 +50,8 @@
 
 SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三者合一。
 
+**创新定位 · INNOVATION**　**无桩基悬浮** Pile-free flotation　·　**柔性消浪** Flexible attenuation　·　**能量闭环** Closed-loop energy　·　**可复现验证** Reproducible proof
+
 **108 秒技术展示片** —— [▶ 在线播放（GitHub Pages · 点开即看 · 无需下载）](https://sinoshop-open.github.io/webpage/#film)　｜　[⬇ 下载 MP4](showcase/SINOPORT_Tech_Showcase_108s.mp4)
 
 **[🌐 访问项目官网展示页 (GitHub Pages)](https://sinoshop-open.github.io/webpage/)** ｜ **[🐙 GitHub 镜像仓库](https://github.com/SINOSHOP-OPEN/SinoPORT)** ｜ **[💻 Gitee 主仓库](https://gitee.com/sinoshop/SinoPORT)**
@@ -62,6 +64,28 @@ SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三�
 | **众生和谐**<br>All beings in harmony | 用硬核的物理断言焊牢生命底线，把所有的温柔留给众生。<br>Hard assertions weld the floor of life; all tenderness is reserved for all beings. |
 
 </div>
+
+---
+
+### 项目创新定位 · INNOVATION POSITIONING
+
+> **不打桩、不硬抗 —— 用无桩基悬浮与柔性缓冲，把海的狂暴变成可用的电；把重量还给海，而不是压给结构。**
+>
+> *No piles, no brute force — pile-free flotation and flexible buffering turn the sea's violence into usable power, and hand the load back to the sea instead of pressing it onto the structure.*
+
+我们的创新不在于造出更大的港，而在于换掉三种"理所当然"。
+
+| # | 创新维度 | 传统做法 | 我们的路径 | 可复核证据 |
+|:--|:--|:--|:--|:--|
+| **01** | **承重逻辑**<br>Load path | 用桩基把结构钉进海床，波浪与载荷交给岩石承受 | 竖向荷载交给浮力，冲击交给柔性缓冲 —— 重量转移给海，不压给结构 | 柔性位移包络 **2–5 mm** 受控微位移；稳性核算 **28 / 28** 断言通过 |
+| **02** | **能量闭环**<br>Energy loop | 港区用电来自岸电，风浪只是负担 | 以波浪与风为输入，把极端海况转化为港区自用电力，扣除寄生能耗后**净能量为正** | `verify/` 一键复现 **9 / 9 通过**，退出码 0 |
+| **03** | **系统韧性**<br>Resilience | 指望单一环节扛住一切 | 四层纵深防御 + 频带分离：电磁、液压、弹簧、仿生根系各管一段频带，不互相抢相位 | **361 项物理断言**逐条判定，判据非恒真 —— 关闭前馈或加载超包络即判 FAIL |
+| **04** | **数据资产**<br>Open proof | 结论靠宣传材料背书 | 数据集与核验脚本一并公开，一条命令独立复跑，得到与我们完全相同的结果 | `verify/` 公开数据集 ＋ `showcase/` 公开版白皮书 |
+| **05** | **人机协同**<br>Human × AI | 人写文案，AI 生成幻觉 | 人划下"不可逾越的安全包络"，AI 做不知疲倦的穷举与交叉验证 —— 各美其美，美美与共 | 合入即生成基于 SHA-256 的数字存证凭证 |
+
+**一句话概括创新点**：我们把"抵抗海"换成了"顺应海"，把"相信我们"换成了"请你来跑"。
+
+> 边界照实披露：结论给得出，底牌不给 —— 核心控制算法、结构设计与工程几何配置不在公开范围内。
 
 ---
 
