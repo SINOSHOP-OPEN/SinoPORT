@@ -1,11 +1,21 @@
 # 公开断言层 · 发布清单
 
-本清单由脚本按**磁盘实际字节**重算生成（SHA-256 前 16 位）。
-任何一份文件被改动后，其指纹即与本清单不符 —— 这正是数字存证的意义。
+本清单由脚本按**磁盘实际字节**重算生成，任何一份文件被改动后其指纹即与本清单不符。
+
+## 指纹口径（两类，不可混用）
+
+| 类型 | 适用对象 | 算法 |
+|---|---|---|
+| **字节指纹** | 脚本 / 运行器 / AI Agent 骨架 / 公开数据 CSV | 对文件原始字节取 SHA-256（前 16 位） |
+| **语义指纹** | 核验结果 JSON | 解析 JSON → 键排序 → 规范化序列化 → 取 SHA-256（前 16 位） |
+
+> 结果 JSON 是验证脚本**运行时写出的产物**，每次运行都会重排浮点与缩进，
+> 字节指纹天然不稳定；**语义指纹**才对应「结论逐次一致」这一真正要存证的事实。
+> 静态资产的字节指纹依赖换行符统一（仓库已用 `.gitattributes` 锁定 LF）。
 
 ## 物理断言脚本 · 15 条验证主线
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 字节指纹 SHA-256（前 16） |
 |---|---:|---|
 | `public_verify_01_wave_attenuation_381m.py` | 14564 | `d9a2e3d27337cd8b` |
 | `public_verify_02_lcs_load_cancellation.py` | 19025 | `467dbc7d4308ac15` |
@@ -25,54 +35,54 @@
 
 ## 聚合运行器
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 字节指纹 SHA-256（前 16） |
 |---|---:|---|
 | `run_all_public_verifications.py` | 3615 | `e7f25f236c569b02` |
 
 ## AI Agent 最小骨架
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 字节指纹 SHA-256（前 16） |
 |---|---:|---|
 | `agent_min_skeleton.py` | 11299 | `c342e456a4deffff` |
 
-## 核验结果 JSON
+## 核验结果 JSON（语义指纹）
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 语义指纹 SHA-256（前 16） |
 |---|---:|---|
-| `verify_01_summary.json` | 8833 | `e801ea883e081efa` |
-| `verify_01_wave_attenuation_381m_results.json` | 8833 | `e801ea883e081efa` |
-| `verify_02_lcs_load_cancellation_results.json` | 7052 | `6f355938f9bc6677` |
-| `verify_02_summary.json` | 7504 | `40faa161330b5ca6` |
-| `verify_03_summary.json` | 5331 | `301a0ae505a7a8c7` |
-| `verify_03_tidal_height_constant_results.json` | 1082845 | `5175608436001fc7` |
-| `verify_04_summary.json` | 9458 | `71d36ff7f406018b` |
-| `verify_04_wave_multilevel_summary.json` | 9458 | `71d36ff7f406018b` |
-| `verify_05_lcs_tonnage_summary.json` | 120744 | `b2a849edf4197722` |
-| `verify_06_composite_material_summary.json` | 122732 | `f4794d80edff6fcb` |
-| `verify_07_cable_stress_summary.json` | 44043 | `27c316cd938ddcd7` |
-| `verify_08_tidal48_summary.json` | 1623794 | `57531d90013a1597` |
-| `verify_09_bidirectional_berth_summary.json` | 17426 | `af5e477bd6a70e5d` |
-| `verify_10_load_transfer_summary.json` | 3878 | `c2cf07e55e71a9e6` |
-| `verify_11_economics_lcc_summary.json` | 1702 | `950b991d97fd8cb1` |
-| `verify_12_pressure_unload_summary.json` | 1131 | `0f87db3e09a38fd4` |
-| `verify_13_band_allocation_summary.json` | 2795 | `522215c13c1d51ae` |
-| `verify_14_load_allocation_summary.json` | 2667 | `9c44bf3fddbe6ab3` |
-| `verify_15_ab_coupling_summary.json` | 2567 | `732723266f64daf9` |
+| `verify_01_summary.json` | 8833 | `e6f859f46d54907b` |
+| `verify_01_wave_attenuation_381m_results.json` | 9223 | `e6f859f46d54907b` |
+| `verify_02_lcs_load_cancellation_results.json` | 7319 | `461afffbca0da478` |
+| `verify_02_summary.json` | 7504 | `54346d3e95b5c413` |
+| `verify_03_summary.json` | 5331 | `e6e91acf83ae22d2` |
+| `verify_03_tidal_height_constant_results.json` | 1129112 | `aaa8865eacef6af0` |
+| `verify_04_summary.json` | 9458 | `1d7d9c18f6f39dba` |
+| `verify_04_wave_multilevel_summary.json` | 9810 | `1d7d9c18f6f39dba` |
+| `verify_05_lcs_tonnage_summary.json` | 127391 | `1d361c844415ef81` |
+| `verify_06_composite_material_summary.json` | 127944 | `617252248605064a` |
+| `verify_07_cable_stress_summary.json` | 45563 | `5af2024b70236dbd` |
+| `verify_08_tidal48_summary.json` | 1693092 | `9bf8cf10df9b78de` |
+| `verify_09_bidirectional_berth_summary.json` | 18099 | `220d9aa9fcf81716` |
+| `verify_10_load_transfer_summary.json` | 3973 | `07324f59dd66f551` |
+| `verify_11_economics_lcc_summary.json` | 1775 | `d3bdb9a1c5b8efb0` |
+| `verify_12_pressure_unload_summary.json` | 1171 | `e261adb7d6ca90c4` |
+| `verify_13_band_allocation_summary.json` | 2854 | `1c2e264dcfd3d713` |
+| `verify_14_load_allocation_summary.json` | 2721 | `1bbf29f7030f4fb7` |
+| `verify_15_ab_coupling_summary.json` | 2619 | `171b800cd4779543` |
 
 ## 公开数据 CSV
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 字节指纹 SHA-256（前 16） |
 |---|---:|---|
 | `data/payload_response.csv` | 213 | `e75cdd53fcae3d23` |
 | `data/tonnage_sweep.csv` | 244 | `8072604807fdeab3` |
-| `data_cable_stress.csv` | 6736 | `37032ba54284df4e` |
-| `data_lcs_tonnage.csv` | 556 | `9555178d09644586` |
-| `data_lcs_tonnage_drive.csv` | 40091 | `176ee745a3cbed0c` |
-| `data_tidal48_turbine.csv` | 157419 | `a0776068f74c095d` |
+| `data_cable_stress.csv` | 6833 | `dace39587a779837` |
+| `data_lcs_tonnage.csv` | 561 | `e788725ff0d7dcd0` |
+| `data_lcs_tonnage_drive.csv` | 41692 | `49aa6cd6270a1e8f` |
+| `data_tidal48_turbine.csv` | 160300 | `f3c232ac193d021d` |
 
 ## 数据自洽性脚本
 
-| 文件 | 字节 | SHA-256（前 16） |
+| 文件 | 字节 | 字节指纹 SHA-256（前 16） |
 |---|---:|---|
 | `verify_public_dataset.py` | 7197 | `e2503a534d7f06a5` |
 
