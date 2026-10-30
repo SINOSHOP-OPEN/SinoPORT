@@ -50,24 +50,24 @@
 | 文件 | 字节 | 语义指纹 SHA-256（前 16） |
 |---|---:|---|
 | `verify_01_summary.json` | 8833 | `e6f859f46d54907b` |
-| `verify_01_wave_attenuation_381m_results.json` | 9223 | `e6f859f46d54907b` |
-| `verify_02_lcs_load_cancellation_results.json` | 7319 | `461afffbca0da478` |
+| `verify_01_wave_attenuation_381m_results.json` | 8833 | `e6f859f46d54907b` |
+| `verify_02_lcs_load_cancellation_results.json` | 7052 | `461afffbca0da478` |
 | `verify_02_summary.json` | 7504 | `54346d3e95b5c413` |
 | `verify_03_summary.json` | 5331 | `e6e91acf83ae22d2` |
-| `verify_03_tidal_height_constant_results.json` | 1129112 | `aaa8865eacef6af0` |
+| `verify_03_tidal_height_constant_results.json` | 1082845 | `aaa8865eacef6af0` |
 | `verify_04_summary.json` | 9458 | `1d7d9c18f6f39dba` |
-| `verify_04_wave_multilevel_summary.json` | 9810 | `1d7d9c18f6f39dba` |
-| `verify_05_lcs_tonnage_summary.json` | 127391 | `1d361c844415ef81` |
-| `verify_06_composite_material_summary.json` | 127944 | `617252248605064a` |
-| `verify_07_cable_stress_summary.json` | 45563 | `5af2024b70236dbd` |
-| `verify_08_tidal48_summary.json` | 1693092 | `9bf8cf10df9b78de` |
-| `verify_09_bidirectional_berth_summary.json` | 18099 | `220d9aa9fcf81716` |
-| `verify_10_load_transfer_summary.json` | 3973 | `07324f59dd66f551` |
-| `verify_11_economics_lcc_summary.json` | 1775 | `d3bdb9a1c5b8efb0` |
-| `verify_12_pressure_unload_summary.json` | 1171 | `e261adb7d6ca90c4` |
-| `verify_13_band_allocation_summary.json` | 2854 | `1c2e264dcfd3d713` |
-| `verify_14_load_allocation_summary.json` | 2721 | `1bbf29f7030f4fb7` |
-| `verify_15_ab_coupling_summary.json` | 2619 | `171b800cd4779543` |
+| `verify_04_wave_multilevel_summary.json` | 9458 | `1d7d9c18f6f39dba` |
+| `verify_05_lcs_tonnage_summary.json` | 120744 | `1d361c844415ef81` |
+| `verify_06_composite_material_summary.json` | 122732 | `617252248605064a` |
+| `verify_07_cable_stress_summary.json` | 44043 | `5af2024b70236dbd` |
+| `verify_08_tidal48_summary.json` | 1623794 | `9bf8cf10df9b78de` |
+| `verify_09_bidirectional_berth_summary.json` | 17426 | `220d9aa9fcf81716` |
+| `verify_10_load_transfer_summary.json` | 3878 | `07324f59dd66f551` |
+| `verify_11_economics_lcc_summary.json` | 1702 | `d3bdb9a1c5b8efb0` |
+| `verify_12_pressure_unload_summary.json` | 1131 | `e261adb7d6ca90c4` |
+| `verify_13_band_allocation_summary.json` | 2795 | `1c2e264dcfd3d713` |
+| `verify_14_load_allocation_summary.json` | 2667 | `1bbf29f7030f4fb7` |
+| `verify_15_ab_coupling_summary.json` | 2567 | `171b800cd4779543` |
 
 ## 公开数据 CSV
 
@@ -75,10 +75,10 @@
 |---|---:|---|
 | `data/payload_response.csv` | 213 | `e75cdd53fcae3d23` |
 | `data/tonnage_sweep.csv` | 244 | `8072604807fdeab3` |
-| `data_cable_stress.csv` | 6833 | `dace39587a779837` |
-| `data_lcs_tonnage.csv` | 561 | `e788725ff0d7dcd0` |
-| `data_lcs_tonnage_drive.csv` | 41692 | `49aa6cd6270a1e8f` |
-| `data_tidal48_turbine.csv` | 160300 | `f3c232ac193d021d` |
+| `data_cable_stress.csv` | 6736 | `37032ba54284df4e` |
+| `data_lcs_tonnage.csv` | 556 | `9555178d09644586` |
+| `data_lcs_tonnage_drive.csv` | 40091 | `176ee745a3cbed0c` |
+| `data_tidal48_turbine.csv` | 157419 | `a0776068f74c095d` |
 
 ## 数据自洽性脚本
 
