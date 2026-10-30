@@ -10,14 +10,14 @@
 | `public_verify_01_wave_attenuation_381m.py` | 14564 | `d9a2e3d27337cd8b` |
 | `public_verify_02_lcs_load_cancellation.py` | 19025 | `467dbc7d4308ac15` |
 | `public_verify_03_tidal_height_constant.py` | 13919 | `9f035345ae60c907` |
-| `public_verify_04_wave_multilevel.py` | 9654 | `26342de0ce3cb05b` |
+| `public_verify_04_wave_multilevel.py` | 9414 | `104c16e1bf065b81` |
 | `public_verify_05_lcs_tonnage.py` | 16668 | `d8b024009cea7510` |
 | `public_verify_06_composite_material.py` | 22141 | `bcbf7cd6d6ce64a1` |
 | `public_verify_07_cable_stress.py` | 14700 | `f76ea998ef232c66` |
 | `public_verify_08_tidal48.py` | 14048 | `0ae006cdd6656693` |
-| `public_verify_09_bidirectional_berth_flow.py` | 19108 | `b5e5bc364cf6a4df` |
+| `public_verify_09_bidirectional_berth_flow.py` | 18659 | `b863b1653bdf1cfb` |
 | `public_verify_10_load_transfer.py` | 11964 | `dd36c9d03dce91db` |
-| `public_verify_11_economics_lcc.py` | 24556 | `9ef0893315933976` |
+| `public_verify_11_economics_lcc.py` | 24045 | `1dea4fad842d4489` |
 | `public_verify_12_pressure_unload.py` | 30708 | `e8a65a913ac30a82` |
 | `public_verify_13_band_allocation.py` | 11847 | `5dd03f1a4af1f36b` |
 | `public_verify_14_load_allocation.py` | 10014 | `f912e60c6a32a46b` |
@@ -39,42 +39,42 @@
 
 | 文件 | 字节 | SHA-256（前 16） |
 |---|---:|---|
-| `verify_01_summary.json` | 9223 | `7721ddf3c3361b66` |
-| `verify_01_wave_attenuation_381m_results.json` | 9223 | `7721ddf3c3361b66` |
-| `verify_02_lcs_load_cancellation_results.json` | 7319 | `5758335e5a6668f5` |
+| `verify_01_summary.json` | 8833 | `e801ea883e081efa` |
+| `verify_01_wave_attenuation_381m_results.json` | 8833 | `e801ea883e081efa` |
+| `verify_02_lcs_load_cancellation_results.json` | 7052 | `6f355938f9bc6677` |
 | `verify_02_summary.json` | 7504 | `40faa161330b5ca6` |
 | `verify_03_summary.json` | 5331 | `301a0ae505a7a8c7` |
-| `verify_03_tidal_height_constant_results.json` | 1129112 | `6ddd588f490799f3` |
-| `verify_04_summary.json` | 9810 | `2033e7cfac605dca` |
-| `verify_04_wave_multilevel_summary.json` | 9810 | `2033e7cfac605dca` |
-| `verify_05_lcs_tonnage_summary.json` | 127391 | `5c87dcf76d1ad659` |
-| `verify_06_composite_material_summary.json` | 127944 | `8b937c5bfbdcfef5` |
-| `verify_07_cable_stress_summary.json` | 45563 | `578ffe12ff4a5c3d` |
-| `verify_08_tidal48_summary.json` | 1693092 | `c704f2cff261f579` |
-| `verify_09_bidirectional_berth_summary.json` | 18099 | `bb88aac9eee7432f` |
-| `verify_10_load_transfer_summary.json` | 3973 | `913ff31ea6f412e7` |
-| `verify_11_economics_lcc_summary.json` | 1775 | `c9e08688d0e08967` |
-| `verify_12_pressure_unload_summary.json` | 1171 | `11702498f9782de9` |
-| `verify_13_band_allocation_summary.json` | 2854 | `a9d56bf68e9085ba` |
-| `verify_14_load_allocation_summary.json` | 2721 | `b2a774d3eda141cb` |
-| `verify_15_ab_coupling_summary.json` | 2619 | `2fedef8f20e07992` |
+| `verify_03_tidal_height_constant_results.json` | 1082845 | `5175608436001fc7` |
+| `verify_04_summary.json` | 9458 | `71d36ff7f406018b` |
+| `verify_04_wave_multilevel_summary.json` | 9458 | `71d36ff7f406018b` |
+| `verify_05_lcs_tonnage_summary.json` | 120744 | `b2a849edf4197722` |
+| `verify_06_composite_material_summary.json` | 122732 | `f4794d80edff6fcb` |
+| `verify_07_cable_stress_summary.json` | 44043 | `27c316cd938ddcd7` |
+| `verify_08_tidal48_summary.json` | 1623794 | `57531d90013a1597` |
+| `verify_09_bidirectional_berth_summary.json` | 17426 | `af5e477bd6a70e5d` |
+| `verify_10_load_transfer_summary.json` | 3878 | `c2cf07e55e71a9e6` |
+| `verify_11_economics_lcc_summary.json` | 1702 | `950b991d97fd8cb1` |
+| `verify_12_pressure_unload_summary.json` | 1131 | `0f87db3e09a38fd4` |
+| `verify_13_band_allocation_summary.json` | 2795 | `522215c13c1d51ae` |
+| `verify_14_load_allocation_summary.json` | 2667 | `9c44bf3fddbe6ab3` |
+| `verify_15_ab_coupling_summary.json` | 2567 | `732723266f64daf9` |
 
 ## 公开数据 CSV
 
 | 文件 | 字节 | SHA-256（前 16） |
 |---|---:|---|
-| `data/payload_response.csv` | 222 | `47591c5a4c3889c8` |
-| `data/tonnage_sweep.csv` | 253 | `3b1d7e018c17273e` |
-| `data_cable_stress.csv` | 6833 | `dace39587a779837` |
-| `data_lcs_tonnage.csv` | 561 | `e788725ff0d7dcd0` |
-| `data_lcs_tonnage_drive.csv` | 41692 | `49aa6cd6270a1e8f` |
-| `data_tidal48_turbine.csv` | 160300 | `f3c232ac193d021d` |
+| `data/payload_response.csv` | 213 | `e75cdd53fcae3d23` |
+| `data/tonnage_sweep.csv` | 244 | `8072604807fdeab3` |
+| `data_cable_stress.csv` | 6736 | `37032ba54284df4e` |
+| `data_lcs_tonnage.csv` | 556 | `9555178d09644586` |
+| `data_lcs_tonnage_drive.csv` | 40091 | `176ee745a3cbed0c` |
+| `data_tidal48_turbine.csv` | 157419 | `a0776068f74c095d` |
 
 ## 数据自洽性脚本
 
 | 文件 | 字节 | SHA-256（前 16） |
 |---|---:|---|
-| `verify_public_dataset.py` | 7394 | `793541539d72b799` |
+| `verify_public_dataset.py` | 7197 | `e2503a534d7f06a5` |
 
 ---
 
