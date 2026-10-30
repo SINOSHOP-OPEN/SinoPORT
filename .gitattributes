@@ -1,0 +1,23 @@
+# ★ 换行符策略 —— 数字存证的前提
+# 公开发布层的 SHA-256 指纹必须与**公网实际字节**逐位一致，
+# 否则「清单 = 存证」就成了空话。Windows 上 core.autocrlf=true 会把 LF 改写为 CRLF，
+# 导致线上字节与本地清单不符（实测 16 处指纹不符）。
+# 故对公开验证层强制 LF，并对二进制文件禁止任何换行转换。
+* text=auto
+
+verify/** text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# 二进制：禁止任何换行/文本转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.mp4 binary
+*.webm binary
+*.woff binary
+*.woff2 binary
