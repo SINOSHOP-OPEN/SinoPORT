@@ -88,6 +88,20 @@ SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三�
 
 ### B · 验证页 · Verification
 
+> ### 📊 [已确权数据资产与仿真验证总览](docs/验证证据/已确权数据资产_仿真验证证据.md) → 点击查看
+>
+> 面向已向**广东省数据知识产权登记平台**提交登记的核心数据集，
+> 集中展示**结论级验证证据**：15 条验证主线 · 361 项物理断言 · 19 份核验结果 JSON ·
+> 两张核心结论卡，**全部以公网直链嵌入，点开即得文件本体**。
+> 一条命令即可得到与我方**完全相同**的结论。
+>
+> ```
+> git clone https://github.com/SINOSHOP-OPEN/SinoPORT.git
+> cd SinoPORT/verify && python run_all_public_verifications.py
+> # 运行时实测断言：通过 519，失败 0（覆盖 15 条验证主线）
+> # 对外统一口径  ：361 项物理断言（全部通过，退出码 0）
+> ```
+
 **结论与证据锚点** —— 只列结论；判定过程全在脚本里，退出码 0 才算数。
 
 | 结论 · Conclusion | 证据锚点 · Evidence anchor |
