@@ -71,6 +71,11 @@ def main():
         if code != "200":
             dead.append((label, url, code))
             continue
+        # ★ 非 HTML 资源（.py / .md / .json 等）里的文本不是「页面链接」——
+        #   那是源码内容（如 Python 的 %s 占位符），不参与死链判定。
+        if not re.search(r'<html|<a\s|<body', body[:4000], re.I):
+            print("  （源码资源，跳过内链解析）")
+            continue
         hrefs = re.findall(r'<a[^>]+href="([^"]+)"', body)
         hrefs += re.findall(r'<img[^>]+src="([^"]+)"', body)
         seen = set()
