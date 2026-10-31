@@ -88,7 +88,9 @@ SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三�
 
 ### B · 验证页 · Verification
 
-> ### 📊 [已提交登记审核中的数字资产 · 仿真验证总览](https://sinoshop-open.github.io/webpage/docs/evidence_assets.html) → 点击查看
+> ### 📊 [点击查看：已提交审核数据集 · 仿真验证证据总览（网页版）](https://sinoshop-open.github.io/webpage/docs/evidence/) → 立即打开
+>
+> ### 🗂 [点击查看：17 份已提交数据集 · 仿真验证映射表（网页版）](https://sinoshop-open.github.io/webpage/docs/datasets/) → 立即打开
 >
 > 面向已向**广东省数据知识产权登记平台**提交登记、当前处于「**待审核**」阶段的核心数据集，
 > 集中展示**结论级验证证据**：15 条验证主线 · 361 项物理断言 · 19 份核验结果 JSON ·
@@ -105,7 +107,8 @@ SinoPORT 悬浮港 · SinoSFT 跨海隧道 · SINOSHOP 海洋城市 —— 三�
 > # 对外统一口径  ：361 项物理断言（全部通过，退出码 0）
 > ```
 >
-> 页面 Markdown 源码：[已提交登记审核中数字资产_仿真验证证据.md](docs/验证证据/已提交登记审核中数字资产_仿真验证证据.md)
+> 网页版源码：[docs/evidence/index.html](docs/验证证据/已提交登记审核中数字资产_仿真验证证据.md)
+> 页面 Markdown 源：[已提交登记审核中数字资产_仿真验证证据.md](docs/验证证据/已提交登记审核中数字资产_仿真验证证据.md)
 
 **结论与证据锚点** —— 只列结论；判定过程全在脚本里，退出码 0 才算数。
 
