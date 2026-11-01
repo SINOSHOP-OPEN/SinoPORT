@@ -1,0 +1,9 @@
+﻿case_id,mode,response,load_level
+T-050,control,66.9142,50.0
+T-050,trial,0.004,50.0
+T-100,control,133.8285,100.0
+T-100,trial,0.004,100.0
+T-200,control,267.657,200.0
+T-200,trial,0.004,200.0
+T-500,control,669.1425,500.0
+T-500,trial,0.004,500.0
