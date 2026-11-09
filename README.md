@@ -1,3 +1,11 @@
+<!-- SINOSHOP GALAXY NAV:BEGIN -->
+
+> 🌐 [项目官网](https://sinoshop-open.github.io/webpage/) ｜ 🚀 [SINOSFT 主仓](https://github.com/SINOSHOP-OPEN/sinosft) ｜ 🌊 [SINOTIDE 算法仓](https://github.com/SINOSHOP-OPEN/sinotide) ｜ ⚓ [SINOPORT 悬浮港](https://github.com/SINOSHOP-OPEN/SinoPORT) ｜ 🧪 [代码仿真验证仓](https://gitee.com/sinoshop/Sinoport-public)
+
+> ⚓ **本仓库为 [SINOSFT 主仓](https://github.com/SINOSHOP-OPEN/sinosft) 的悬浮港场景，主仓请见 [SINOSFT](https://github.com/SINOSHOP-OPEN/sinosft)。**
+
+<!-- SINOSHOP GALAXY NAV:END -->
+
 <div align="center">
 
 <!-- CREED:START -->
@@ -56,6 +64,8 @@
 ## B · 验证页 · Verification
 
 **代码仓镜像 · [Sinoport-public](https://gitee.com/sinoshop/Sinoport-public)** —— 同一套验证层的独立公开代码仓，两扇门都能进。
+
+> 🧪 **所有底层物理逻辑与验证脚本，请在 [代码仿真验证仓 Sinoport-public](https://gitee.com/sinoshop/Sinoport-public) 中一键复现。**
 
 - [👉 点击查看 15 条验证主线代码（在线预览）](https://gitee.com/sinoshop/Sinoport-public/blob/master/verify/run_all_public_verifications.py)
 - [👉 点击查看 361 项断言核验结果 JSON](https://gitee.com/sinoshop/Sinoport-public/blob/master/verify/verify_01_summary.json)
