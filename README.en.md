@@ -1,6 +1,6 @@
 <!-- SINOSHOP GALAXY NAV:BEGIN -->
 
-> 🌐 [Project Homepage](https://sinoshop-open.github.io/webpage/) ｜ 🚀 [SINOSFT Main Repository](https://github.com/SINOSHOP-OPEN/sinosft) ｜ 🌊 [SINOTIDE Algorithm Repository](https://github.com/SINOSHOP-OPEN/SinoTide) ｜ ⚓ [SINOPORT Floating Port](https://github.com/SINOSHOP-OPEN/SinoPORT) ｜ 🧪 [Simulation & Verification Repository](https://gitee.com/sinoshop/Sinoport-public)
+> 🌐&nbsp;[Project Homepage](https://sinoshop-open.github.io/webpage/) ｜ 🚀&nbsp;[SINOSFT Main Repository](https://github.com/SINOSHOP-OPEN/sinosft) ｜ 🌊&nbsp;[SINOTIDE Algorithm Repository](https://github.com/SINOSHOP-OPEN/SinoTide) ｜ ⚓&nbsp;[SINOPORT Floating Port](https://github.com/SINOSHOP-OPEN/SinoPORT) ｜ 🧪&nbsp;[Simulation & Verification Repository](https://gitee.com/sinoshop/Sinoport-public)
 
 > ⚓ **This repository is the floating-port scenario of the [SINOSFT main repository](https://github.com/SINOSHOP-OPEN/sinosft); the main repository lives there.**
 
