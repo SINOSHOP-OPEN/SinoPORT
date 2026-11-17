@@ -1,0 +1,42 @@
+#!/bin/sh
+# =============================================================================
+# SINOSHOP 公开层脱敏 · 推送闸门
+#
+# 用途：推送前对整个工作树做一次公开层尺寸/密度扫描。
+#       覆盖正文、文件名、目录名、PDF 内嵌文本四层。
+#
+# 启用方式（在仓库根执行一次）：
+#       git config core.hooksPath .githooks
+#
+# 退出码：0 = 放行；1 = 拦截
+# =============================================================================
+
+ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+SCANNER="$ROOT/scripts/ci/scan_public_layer.py"
+
+if [ ! -f "$SCANNER" ]; then
+    echo "⚠️  公开层扫描器缺失，跳过推送前扫描：$SCANNER" >&2
+    exit 0
+fi
+
+if command -v python3 >/dev/null 2>&1; then
+    PY=python3
+elif command -v python >/dev/null 2>&1; then
+    PY=python
+else
+    echo "⚠️  未找到 Python 解释器，跳过推送前扫描。" >&2
+    exit 0
+fi
+
+echo "── 公开层脱敏扫描（推送前） ──"
+"$PY" "$SCANNER" "$ROOT"
+rc=$?
+
+if [ $rc -ne 0 ]; then
+    echo "" >&2
+    echo "🚫 推送被拦截：工作树检出受控范围参数。" >&2
+    echo "   请先脱敏再推送；如判定为误报，可在治理文档提出规则修订。" >&2
+    exit 1
+fi
+
+exit 0

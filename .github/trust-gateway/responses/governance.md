@@ -28,7 +28,7 @@ SINOSHOP 的治理去中心化是一个**渐进过程**：
 
 ### 3. 制衡机制
 
-- 所有治理决策均在 [Issues](https://github.com/SinoSir/SINOSHOP/issues) 公开讨论。
+- 所有治理决策均在 [Issues](https://github.com/SINOSHOP-OPEN/SinoPORT/issues) 公开讨论。
 - ROOT 的任何否决必须附带**书面技术理由**，接受社区审查。
 - 贡献者保留 **退出权（Fork Right）**：如果治理机制失效，任何人可以 Fork 本仓库并创建独立分支。
 

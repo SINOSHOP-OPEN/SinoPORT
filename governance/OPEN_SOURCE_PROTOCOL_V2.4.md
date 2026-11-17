@@ -2,7 +2,7 @@
 
 ## 1. 引言
 
-本协议适用于所有发布在 [SINOSHOP](https://github.com/SinoSir/SINOSHOP) 仓库中的源代码、构建产物、文档及治理文件（以下简称“本作品”）。  
+本协议适用于所有发布在 [SINOSHOP](https://github.com/SINOSHOP-OPEN/SinoPORT) 仓库中的源代码、构建产物、文档及治理文件（以下简称“本作品”）。  
 本协议定义了版本生命周期、安全策略、兼容性承诺及贡献规范，是 SINOSHOP 开源治理的最高准则。
 
 > 🧪 **当前阶段：** SINOSHOP 处于早期开发阶段（0.3）。正式版发布后，本协议中的分层治理模型将全面生效。

@@ -121,7 +121,7 @@ text
 这份 CLA 将在法律层面固化 L3 保护，确保所有公开贡献不会危及核心 IP。
 
 创建链接：
-https://github.com/SinoSir/SINOSHOP/new/main/governance/CONTRIBUTOR_LICENSE_AGREEMENT.md
+https://github.com/SINOSHOP-OPEN/SinoPORT/new/main/00_Legal/CONTRIBUTOR_HONOR_ATTESTATION.md
 
 完整内容：
 
@@ -129,13 +129,13 @@ markdown
 # 开源贡献者协议 / CONTRIBUTOR LICENSE AGREEMENT (CLA)
 
 > **版本：** V1.0 | **生效日期：** 2026-04-27  
-> 本协议适用于所有向 SINOSHOP 公开仓库（`SinoSir/SINOSHOP`）提交贡献的个人或实体。
+> 本协议适用于所有向 SINOSHOP 公开仓库（`SINOSHOP-OPEN/SinoPORT`）提交贡献的个人或实体。
 
 ---
 
 ## 1. 定义
 
-- **“项目”**：指 SINOSHOP 体系下的所有公开仓库，包括但不限于 `SinoSir/SINOSHOP`。
+- **“项目”**：指 SINOSHOP 体系下的所有公开仓库，包括但不限于 `SINOSHOP-OPEN/SinoPORT`。
 - **“贡献”**：指向项目提交的任何代码、文档、设计、图表或其他原创作品。
 - **“贡献者”**：指向项目提交贡献的个人或实体。
 - **“核心资产”**：指 SINOSHOP 体系下标记为 L3 受限级的算法、合约、协议实现，存放于按角色分发的私有仓库中。

@@ -105,7 +105,9 @@ jobs:
         run: |
           echo "::group::Checking naming conventions..."
           # 确保根目录核心文件存在
-          REQUIRED_FILES=("README.md" "LICENSE.md" "CONTRIBUTING.md" "SECURITY.md")
+          # 注意：许可证文件名沿用仓库既有约定「LICENSE」（无扩展名），
+          #       与 README 中的链接一致；此处勿改成 LICENSE.md。
+          REQUIRED_FILES=("README.md" "LICENSE" "CONTRIBUTING.md" "SECURITY.md")
           MISSING=()
           for file in "${REQUIRED_FILES[@]}"; do
             if [ ! -f "$file" ]; then
@@ -117,5 +119,29 @@ jobs:
             echo "Please add these files to the repository root."
           else
             echo "✅ All core files present."
+          fi
+          echo "::endgroup::"
+
+      - name: "5. 公开层尺寸脱敏扫描"
+        shell: bash
+        run: |
+          echo "::group::Scanning public layer for dimension leaks..."
+          # 公开层禁止披露物理尺寸 / 容积 / 重量 / 材料密度。
+          # 扫描器只描述「量纲形态」，具体工程真值保存在受控层，不进本仓库。
+          # PDF 内嵌文本需要 pymupdf；缺失时装依赖后重试。
+          python3 -m pip install --quiet --disable-pip-version-check pymupdf || \
+            echo "::warning::pymupdf 安装失败，PDF 层将跳过（需人工核验）"
+
+          # 注意：GitHub Actions 的 `shell: bash` 默认带 `-e`，
+          #       直接跟一行 `rc=$?` 会让 job 直接终止、拿不到退出码。
+          #       用 `|| rc=$?` 捕获，既不中断又能分流错误码。
+          rc=0
+          python3 scripts/ci/scan_public_layer.py . || rc=$?
+          if [ "$rc" -eq 1 ]; then
+            echo "::error::公开层检出尺寸/密度类泄露，请按治理文档脱敏后重试。"
+            exit 1
+          elif [ "$rc" -eq 2 ]; then
+            echo "::error::扫描未能完成（BLOCKED），请检查扫描器依赖。"
+            exit 1
           fi
           echo "::endgroup::"

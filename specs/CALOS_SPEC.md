@@ -101,7 +101,7 @@ energy_absorption_percent	energy_absorption	%
 5. 跨仓库协作流程
 CALOS 团队在 SinoSir/CALOS_OpenSources 维护物理控制逻辑与硬件驱动。
 
-SINOSHOP 团队在 SinoSir/SINOSHOP 定义数据接口与协议标准。
+SINOSHOP 团队在 SINOSHOP-OPEN/SinoPORT 定义数据接口与协议标准。
 
 双方通过本文件定义的 API 进行集成测试。
 

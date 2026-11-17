@@ -1,0 +1,45 @@
+#!/bin/sh
+# =============================================================================
+# SINOSHOP 公开层脱敏 · 提交信息闸门
+#
+# 用途：阻止把物理尺寸 / 材料密度写进 commit message。
+# 依据：公开层只写宏观描述（做了什么、为什么改、影响哪一层）。
+#       尺寸、容积、重量、材料配比属受控范围，不进提交历史。
+#
+# 启用方式（在仓库根执行一次）：
+#       git config core.hooksPath .githooks
+#
+# 退出码：0 = 放行；1 = 拦截
+# =============================================================================
+
+ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+SCANNER="$ROOT/scripts/ci/scan_public_layer.py"
+
+# 扫描器缺失时不阻断（避免因脚手架不完整卡死提交流程），但明确提示
+if [ ! -f "$SCANNER" ]; then
+    echo "⚠️  公开层扫描器缺失，跳过提交信息检查：$SCANNER" >&2
+    exit 0
+fi
+
+# 优先用 python3；无则用 python；都无则跳过
+if command -v python3 >/dev/null 2>&1; then
+    PY=python3
+elif command -v python >/dev/null 2>&1; then
+    PY=python
+else
+    echo "⚠️  未找到 Python 解释器，跳过提交信息检查。" >&2
+    exit 0
+fi
+
+"$PY" "$SCANNER" --msg "$1"
+rc=$?
+
+if [ $rc -ne 0 ]; then
+    echo "" >&2
+    echo "🚫 提交被拦截：提交信息含受控范围参数。" >&2
+    echo "   请改写为宏观描述后重试，例如：" >&2
+    echo "     feat: 收敛公开层目录命名并补充治理文档" >&2
+    exit 1
+fi
+
+exit 0

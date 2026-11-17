@@ -1,0 +1,22 @@
+# 换行符规范
+# ─────────────────────────────────────────────────────────────────────────────
+# 背景：本仓库的 Git 钩子以 shell 脚本形式随代码分发（.githooks/）。
+#       若在 Windows 上检出时被转成 CRLF，则在 Linux / macOS / Git Bash 上
+#       执行会因「bad interpreter」直接失败 —— 钩子会静默失效，
+#       这是最危险的一种失败方式：看起来装了防护，实际没有。
+#
+# 因此：钩子与 shell 脚本一律强制 LF，与检出平台的换行策略无关。
+
+.githooks/*        text eol=lf
+scripts/enable_hooks.sh text eol=lf
+
+# 其余 shell 脚本同样锁定 LF（若日后新增）
+*.sh               text eol=lf
+
+# 二进制资产不做任何换行转换
+*.glb              binary
+*.wav              binary
+*.mp4              binary
+*.pdf              binary
+*.png              binary
+*.jpg              binary

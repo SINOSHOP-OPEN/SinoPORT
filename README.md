@@ -110,13 +110,24 @@ sinoshop-os/
 ├── Documentation/                ← 海洋城市白皮书（中/英）
 ├── CLA.md                        ← 贡献者许可协议
 ├── CONTRIBUTING.md               ← 参与方式 · 数字存证与共建共享
+├── SECURITY.md                   ← 安全策略 · 受控范围披露通道
 ├── ENGINEERING.md                ← 工程总纲
 ├── INDEX.md                      ← 索引
 ├── Standard_Floating_Module_Spec_V5.6.md  ← 标准浮箱模块规范
 ├── SINOSFT-PATH/                 ← 跨海通道路径
-├── SINOSFT_Bridge_Segment/      ← 跨海通道桥梁段
-└── open-collab/                 ← 开源共创区（T1 大众层 / T2 开发者层素材与治理文件）
+├── SINOSFT_Bridge_Segment/       ← 跨海通道桥梁段
+├── open-collab/                  ← 开源共创区（T1 大众层 / T2 开发者层素材与治理文件）
+├── scripts/ci/                   ← CI 校验脚本（含公开层尺寸脱敏扫描器）
+└── .githooks/                    ← 随代码分发的本地脱敏钩子（提交/推送闸门）
 ```
+
+> **参与前请先启用本地脱敏钩子**（一次性）：
+> ```bash
+> sh scripts/enable_hooks.sh
+> ```
+> 启用后，每次提交与推送会自动扫描并在检出受控范围参数时拦截。
+> 规则形态公开可查（见 [`CONTRIBUTING.md`](CONTRIBUTING.md)），
+> 具体工程真值保存在受控层，不进本仓库。
 
 ### 生态项目
 
