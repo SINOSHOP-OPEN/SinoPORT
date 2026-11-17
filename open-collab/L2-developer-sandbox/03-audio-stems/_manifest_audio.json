@@ -1,0 +1,66 @@
+{
+  "generated": "2026-11-17",
+  "source": "official V4 score (MuseScore 4.7.7 --score-parts)",
+  "count": 8,
+  "format": "WAV (44.1kHz / 16bit / stereo)",
+  "duration_note": "各轨时长约 403 秒（含尾音自然衰减）",
+  "license": "见 docs/二创授权协议_V1.0.md",
+  "tracks": [
+    {
+      "public_name": "flute",
+      "instrument_cn": "笛子",
+      "file": "flute.wav",
+      "bytes": 142178446,
+      "description": "笛子分轨 · 主旋律对位与华彩"
+    },
+    {
+      "public_name": "erhu",
+      "instrument_cn": "二胡",
+      "file": "erhu.wav",
+      "bytes": 142178446,
+      "description": "二胡分轨 · 长弓舒展与惊涛短弓"
+    },
+    {
+      "public_name": "guqin",
+      "instrument_cn": "古琴",
+      "file": "guqin.wav",
+      "bytes": 142178446,
+      "description": "古琴分轨 · 铺底与点景"
+    },
+    {
+      "public_name": "guzheng",
+      "instrument_cn": "古筝",
+      "file": "guzheng.wav",
+      "bytes": 142178446,
+      "description": "古筝分轨 · 琶音织体"
+    },
+    {
+      "public_name": "bell",
+      "instrument_cn": "编钟",
+      "file": "bell.wav",
+      "bytes": 142178446,
+      "description": "编钟分轨 · 五击定音标点"
+    },
+    {
+      "public_name": "nature_field",
+      "instrument_cn": "自然声场",
+      "file": "nature_field.wav",
+      "bytes": 142178446,
+      "description": "自然声场分轨 · 海风与浪噪"
+    },
+    {
+      "public_name": "vocal",
+      "instrument_cn": "唱腔",
+      "file": "vocal.wav",
+      "bytes": 142178446,
+      "description": "唱腔分轨 · 主唱旋律（含唱词）"
+    },
+    {
+      "public_name": "chorus",
+      "instrument_cn": "群唱",
+      "file": "chorus.wav",
+      "bytes": 142178446,
+      "description": "群唱分轨 · 平行和声铺底"
+    }
+  ]
+}

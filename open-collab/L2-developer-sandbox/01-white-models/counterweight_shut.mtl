@@ -1,0 +1,43 @@
+# SINOSHOP open-collab white model material library
+# 配重调载舱（闭合）（闭合状态的配重调载舱外观。）
+
+newmtl mat_structural_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_buoyancy_module
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_cable
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_light_core
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_hull_skin
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+

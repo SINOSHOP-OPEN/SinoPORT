@@ -1,0 +1,51 @@
+# SINOSHOP open-collab white model material library
+# 壁面单元板（多边形壁面单元板，用于构筑复合壁面。）
+
+newmtl mat_structural_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_hard_facing
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_shell_composite
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_deck_slab
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_light_core
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_vegetation
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+

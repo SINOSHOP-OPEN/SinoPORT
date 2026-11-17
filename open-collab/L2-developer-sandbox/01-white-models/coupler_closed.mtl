@@ -1,0 +1,51 @@
+# SINOSHOP open-collab white model material library
+# 连接件（闭合态）（同一连接件的闭合状态，用于应急工况演示。）
+
+newmtl mat_structural_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_expansion_joint
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_cable
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_safety_flap
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_gate_panel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_light_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+

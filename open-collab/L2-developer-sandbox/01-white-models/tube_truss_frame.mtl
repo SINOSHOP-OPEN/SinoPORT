@@ -1,0 +1,19 @@
+# SINOSHOP open-collab white model material library
+# 管段骨架框架（管段内部三角桁架骨架框架，可见受力构件拓扑。）
+
+newmtl mat_structural_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_light_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+

@@ -1,0 +1,43 @@
+# SINOSHOP open-collab white model material library
+# 消浪单元（分解视图）（消浪单元的分解视图，展示分层构造。）
+
+newmtl mat_structural_steel
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_buoyancy_module
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_cable
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_shell_composite
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+
+newmtl mat_ballast_medium
+Kd 0.8000 0.8000 0.8000
+Ka 0.0000 0.0000 0.0000
+Ks 0.1000 0.1000 0.1000
+Ns 30.0
+d 1.0000
+illum 2
+

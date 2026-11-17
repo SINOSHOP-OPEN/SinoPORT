@@ -10,4 +10,4 @@
 🚧 待填充（V2.0规划中）
 
 ## 关联历史模块
-参见 [Legacy_Submodules/](../Legacy_Submodules/)
+相关技术细节属受控范围，不在公开层提供。

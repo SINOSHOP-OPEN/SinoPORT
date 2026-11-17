@@ -7,7 +7,7 @@
 
 SINOSHOP 全称：Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform，
 释义为：自浮式 · 智能 · 网络化 · 海洋 · 城市 · 运营平台，
-是以跨海通道为核心的海洋城市文明体系。*(注：单个稳定平台壳体宽度为尺度，详见README V31.2物理基准)*
+是以跨海通道为核心的海洋城市文明体系。*(注：单个稳定平台壳体几何基准属受控范围，不在公开层提供具体尺寸)*
 
 海生电、电养桥、桥造城、城惠民，是SINOSHOP核心使命。
 以海洋能驱动通道运营，以通道能量滋养城市发展，以城市繁荣回馈人民福祉。
