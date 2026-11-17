@@ -25,7 +25,7 @@ The platform is not a static infrastructure but a dynamic system with life-like 
 - **Bridge Deck Stabilization Core Technology**:
   - **Dynamic Float-Virtual Anchor-Suspended Anchor Combination**: Neutralizes dynamic load impacts to keep the road height constant.
   - **Zero-Energy Tidal Power Ballast Tanks**: Utilizes tidal energy to adjust ballast and offset buoyancy changes caused by tides.
-  - **Honeycomb Suspended Breakwaters**: Misaligned guide tubes weaken wave impact, ensuring waves near the traffic zone stay below 尺度 even during 18-meter swells.
+  - **Honeycomb Suspended Breakwaters**: Misaligned guide tubes weaken wave impact, ensuring waves near the traffic zone stay within the controlled threshold even during 18-meter swells.
   - **Typhoon Shield Design**: A "wave-hugging" shield creates a closed, safe operating space to withstand typhoon-force winds.
 
 ### 3.2 Green Energy Cluster

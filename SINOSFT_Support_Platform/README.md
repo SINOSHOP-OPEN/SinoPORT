@@ -1,4 +1,4 @@
-﻿# SINOSFT_Support_尺度
+﻿# SINOSFT_Support_Platform
 
 ## 职责
 待补充

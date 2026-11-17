@@ -12,7 +12,7 @@
 **Difficulty:** Expert | **Domain:** Control Systems / Marine Engineering
 
 **Statement:**
-Design a control strategy that maintains pitch deviation ≤ 0.5° for a 尺度 floating module train under Sea State 7 conditions (significant wave height 尺度, peak period 15s).
+Design a control strategy that maintains pitch deviation ≤ 0.5° for a full-scale floating module train under Sea State 7 conditions (significant wave height at the prescribed sea state, peak period 15s).
 
 **Constraints:**
 - Actuator latency < 100ms end-to-end
@@ -60,7 +60,7 @@ Design and validate a modular mechanical connection system (mortise-tenon style)
 **Difficulty:** Intermediate | **Domain:** Embedded Systems / IoT
 
 **Statement:**
-Implement a digital twin synchronization protocol that maintains < 1s latency between physical sensor arrays and the virtual model, with total system power consumption < 500W per 尺度 module segment.
+Implement a digital twin synchronization protocol that maintains < 1s latency between physical sensor arrays and the virtual model, with total system power consumption < 500W per module segment.
 
 **Constraints:**
 - Must operate on edge computing nodes (no cloud dependency)

@@ -1,6 +1,6 @@
 Hero Task 001：巨型 U 堤框架下的双体悬浮隧道—发电平台联合体姿态联控
 觀天之道，執天之行。造福人民。
-"The wave's fury is trapped within 尺度 of concrete. The algorithm is the only key."
+"The wave's fury is trapped within the concrete shell. The algorithm is the only key."
 
 https://img.shields.io/badge/Difficulty-Legendary-red
 https://img.shields.io/badge/Domain-Nonlinear%2520Control-blue
